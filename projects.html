@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:wght@500">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
+
+        <title>Schmieder Development</title>
+
+        <link rel="icon" type="image/x-icon" href="/images/ShmIcon_256.ico">
+        <link href="styles.css" rel="stylesheet">
+        <script type="text/javascript" src="js/carousel.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body onload="Init_Carousels()">
+
+        <header>
+
+            <section id="page_header_section" class="page_header_section">
+                <h1 class="page_header_text" id="RS_Label">
+                  Robert Schmieder: Game and Software Developer
+                </h1>
+              <span>
+                <img src="images/ShmIcon_FullCircle.png" alt="Robert Schmieder's Logo" class="page_header_logo">
+              </span>
+            </section>
+
+            <section id="authorship_disclaimer_section" class="author_ship_header_section">
+                <h2 id="authorship_disclaimer_header" class="authorship_header_h2">
+                    Applications & Games made<br>by Robert Schmieder
+                </h2>
+                <h3 class="authorship_header_h3">
+                    (RedRo Games)
+                </h3>
+            </section>
+
+        </header>
+
+        <main>
+            <main>
+
+                <section id="navigation_section">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                      <div class="container-fluid">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav">
+                              <li class="nav_item">
+                                <a class="nav-link" aria-current="page" href="index.html" id="Home_Link">Home</a>
+                              </li>
+                              <li class="nav_item active">
+                                <a class="nav-link" href="about_me.html" id="AboutMe_Link">About Me</a>
+                              </li>
+                              <li class="nav_item">
+                                <a class="nav-link" href="curriculum_vitae.html" id="CV_Link">Curriculum Vitae</a>
+                              </li>
+                              <li class="nav_item">
+                                <a class="nav-link" href="#" id="Active_Link">My Projects</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </nav>
+                  </section>
+
+                  <section id="page_content_disclaimer" class="page_content_disclaimer_v3">
+                    <h2 id="content_disclaimer_header_text"
+                    class="content_disclaimer_header">
+                          My Projects:
+                    </h2>
+                  </section>
+
+                  <section id="E-Citera_banner_section" class="project_banner">
+                    <h4 class="project_header"></h4>
+                    <div class="project_icon_wrapper">
+                        <image src="images/E_Citera_Icon.png" class="project_icon_props">
+                        </image>
+                    </div>
+                  </section>
+
+                  <section id="char_sheet_carousel_section" class="carousel_wrapper">
+                    <button type="previous_button" class="prev_btn" onclick="e_cit_prev()">
+                      <span class="btn_placeholder_sign">&lt;</span>
+                    </button>
+                    <div name="e-citera_img" class="carousel_image_wrapper">
+                      <img src="images/E-Citera_Images/E-Citera_MainPage_00.png"
+                        alt="Screenshots from the E-Citera reference administration app"
+                        class="carousel_image">
+                    </div>
+                    <div name="e-citera_img" class="carousel_image_wrapper">
+                      <img src="images/E-Citera_Images/E-Citera_MainPage_Action_00.png"
+                        alt="Screenshots from the E-Citera reference administration app"
+                        class="carousel_image">
+                    </div>
+                    <div name="e-citera_img" class="carousel_image_wrapper">
+                      <img src="images/E-Citera_Images/E-Citera_MainPage_Action_01_EditView.png"
+                        alt="Screenshots from the E-Citera reference administration app"
+                        class="carousel_image">
+                    </div>
+                    <div name="e-citera_img" class="carousel_image_wrapper">
+                      <img src="images/E-Citera_Images/E-Citera_MainPage_Action_02_ReferenceLists.png"
+                        alt="Screenshots from the E-Citera reference administration app"
+                        class="carousel_image">
+                    </div>
+                    <div name="e-citera_img" class="carousel_image_wrapper">
+                      <img src="images/E-Citera_Images/E-Citera_MainPage_Action_03_CitationStyles.png"
+                        alt="Screenshots from the E-Citera reference administration app"
+                        class="carousel_image">
+                    </div>
+                    <button type="next_button" class="next_btn" onclick="e_cit_next()">
+                      <span class="btn_placeholder_sign">&gt;</span>
+                    </button>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #D1D1FF;">
+                      <h4 class="date_stamp_header">Technologies:</h4>
+                      <p class="text_box_text">
+                        Plattform independent .NET-MAUI-App using an SQLITE-database<br>
+                        Code: C#/XAML
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #d3dfdf">
+                      <h4 class="date_stamp_header">About the App</h4>
+                      <p class="text_box_text">.NET-MAUI-App, written in C# using an SQLITE-database</p>
+                      <p class="text_box_text">
+                        E-Citera is a reference administration software that helps users to keep track of all the literature (books, papers and articles etc.) 
+                        they read and need for their academic work and private purposes and interests as well of course.
+                        <ul>
+                          <li class="project_list_text">
+                            E-Citera allows users to create a database in which all of the titles of interest to them are stored according to the needs 
+                            of complete bibliographical detail needed for academic research - although it is of course possible to keep it as simple as 
+                            just saving the title of a work for future reference.
+                        </li>
+                        <br>
+                        <li class="project_list_text">
+                          Furthermore users can not only store titles with detailed bibliographical information they can also assign collections of titles to reference lists 
+                          related to a specific topic or bibliography for one of their own academic works, papers or books.
+                        </li>
+                        <br>
+                          <li class="project_list_text">
+                            Finally, E-Citera allows users to convert the bibliographical information of a single title or a whole reference list according to the needs 
+                            of a specific academic citation style, like Harvard referencing, Chicago- or MLA (Modern Language Association)-style 
+                            and simply copy the created citation directly into your foot- or end notes or a reference list at the end of one of their own papers
+                            without the need of formatting the citation themselves.<br>
+                            But, they are not bound to widely used citation styles because E-Citera let's them actually create and store as many citation styles as they like.
+                            So users could easily adapt to the requirements of a small journal for publishing one of their papers without the need 
+                            of manually (re-)writing all the titles cited.
+                          </li>
+                        </ul>
+
+                      </p>
+                    </div>
+                  </section>
+
+                  <section id="CharacterSheet_banner_section" class="project_banner">
+                      <h4 class="project_header">
+                          D&D 5e Character Sheet
+                      </h4>
+                      <div class="project_icon_wrapper">
+                          <image src="images/CharSheet_App_Icon.png" class="project_icon_props">
+                          </image>
+                      </div>
+                  </section>
+
+                  <section id="char_sheet_carousel_section" class="carousel_wrapper">
+                    <button type="previous_button" class="prev_btn" onclick="char_sheet_prev()">
+                      <span class="btn_placeholder_sign">&lt;</span>
+                    </button>
+                    <div name="char_sheet_img" class="carousel_image_wrapper">
+                      <img src="images/CharSheetImages/AbilityScoreWindow_FullView.png"
+                        alt="Screenshots from the Dungeons & Dragons Character Sheet App"
+                        class="carousel_image">
+                    </div>
+                    <div name="char_sheet_img" class="carousel_image_wrapper">
+                      <img src="images/CharSheetImages/MainWindowFullView_01.png"
+                        alt="Screenshots from the Dungeons & Dragons Character Sheet App"
+                        class="carousel_image">
+                    </div>
+                    <div name="char_sheet_img" class="carousel_image_wrapper">
+                      <img src="images/CharSheetImages/Inventory_Window_Fullview.png"
+                        alt="Screenshots from the Dungeons & Dragons Character Sheet App"
+                        class="carousel_image">
+                    </div>
+                    <div name="char_sheet_img" class="carousel_image_wrapper">
+                      <img src="images/CharSheetImages/Merchant_Window_FullView.png"
+                        alt="Screenshots from the Dungeons & Dragons Character Sheet App"
+                        class="carousel_image">
+                    </div>
+                    <div name="char_sheet_img" class="carousel_image_wrapper">
+                      <img src="images/CharSheetImages/Combat_Window_FullView.png"
+                        alt="Screenshots from the Dungeons & Dragons Character Sheet App"
+                        class="carousel_image">
+                    </div>
+                    <button type="next_button" class="next_btn" onclick="char_sheet_next()">
+                      <span class="btn_placeholder_sign">&gt;</span>
+                    </button>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #d3dfdf">
+                      <h4 class="date_stamp_header">Technologies:</h4>
+                      <p class="text_box_text">
+                        Windows Desktop App (WPF)<br>
+                        Code: C#/XAML
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #D1D1FF;">
+                      <h4 class="date_stamp_header">About the App</h4>
+                      <p class="text_box_text">
+                        This is an app for the pen & paper fantasy roleplaying game Dungeons & Dragons.
+                        Pen & paper means that everything happening in the game
+                        - including results of dice rolls and calculations -
+                        would usually be written down on sheets of paper.
+                        The digital Character Sheet app virtualizes these processes and automatizes game mechanics.
+                        (see below for further details)
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="app_download_section">
+                      <section id="CharSheet_download_section" class="app_download_box">
+                          <h4 class="download_header">
+                              Download the App:
+                          </h4>
+                          <p class="download_box_text">
+                              <b>Windows (x86) – 64 bit:</b><br>
+                              <a class="download_box_link">D&D Character Sheet 5e</a>
+                              <br>(MAC OS & Linux Versions will follow soon)
+                          </p>
+                      </section>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #d3dfdf">
+                      <h4 class="date_stamp_header">Details on what the app does:</h4>
+                      <p class="text_box_text">
+                        The rules for the game are quite complex,
+                        it works with differents types of dice, a serious amount of values
+                        describing the capabilities of the different types of characters,
+                        a lot of items – weapons, armor, tools etc.
+                        – and hundreds of spells for some of the character classes.
+                        <br>
+                        Usually, you would write them down on sheets of paper,
+                        do a lot of calculations based on the values of your character
+                        in combination with the dice role results or shuffle through the rule books
+                        – e. g. to find the price of an item or the mechanics of a 'spell'
+                        (magic some characters are able to do) etc.
+                        <br>
+                        This app is designed to make the life of players (users) easier
+                        and helps them to focus on having fun
+                        because the app does all the calculations automatically
+                        and users neither need physical dice nor do they need to know
+                        which die to use in which case – because the app does
+                        and lets them roll on the interface, already adding
+                        and substracting the values for them.
+                        <br>
+                        The app also comes with databases for items and spells.
+                        Players can comfortably buy items &
+                        add them to their inventory from the digital 'merchant-store'
+                        as well as equip weapons and armor in the Inventory Window.
+                        <br>
+                        You don‘t have to know which spells are available for your character
+                        because the app automatically presents a limited selection
+                        from the database based on the class of your character.
+                        <br>
+                        Finally, you can of course save & load your accomplishments as a player:
+                        progress in level & skill, treasure in your inventory as well as
+                        notes on the development and experiences of your character and the story in general.
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box">
+                      <h4 class="date_stamp_header">How the game works:</h4>
+                      <p class="text_box_text">
+                        In Dungeons & Dragons every player assumes the role of a character
+                        with special skills in a diverse team of adventurers:
+                        They specialize e. g. fighting, healing, sneaking or magic.
+                        Players work together as a team and their different skills complement each other.
+                        The digital Character Sheet app virtualizes these processes
+                        and automatizes game mechanics.
+                        (see below for further details)
+                        <br>
+                        Finally, a special kind of player, the so called 'Game Master',
+                        tells the story, describes the environment
+                        and assumes the role of all characters other than the players
+                        – Non-Player-Character's (NPC's)
+                        – as well as the role of the enemies of the players.
+                        (She or he does what the code in a computer game would do.)
+                        <br>
+                        The band of adventurers (the characters of the players) travel through a fantasy universe
+                        – usually a more or less medieval setting – fight monsters or evil persons
+                        and organizations and collect treasures along the way.
+                        <br>
+                        Last but not least while doing so, players experience complex storylines
+                        in which they interact with friendly or hostile NPC's,
+                        usually to the end of solving a quest.
+                        A quest is a task given to them by one of the NPCs occuring in the game.
+                        This can involve all kinds of things,
+                        but for example they have to find long lost relatives,
+                        set out for a rescue mission or procure a powerful item
+                        for somebody hidden in long forgotten ruins or the lair of deadly monster.
+                      </p>
+                    </div>
+                  </section>                  
+
+                  <section id="TIA_VII_banner_section" class="project_banner">
+                    <h4 class="project_header">
+                        Trouble in Andromeda VII
+                    </h4>
+                    <div class="project_icon_wrapper">
+                        <image src="images/TIA_VII_Icon.png" class="project_icon_props">
+                        </image>
+                    </div>
+                  </section>
+
+                  <section id="TIA_VII_carousel_section" class="carousel_wrapper">
+                    <button type="previous_button" class="prev_btn" onclick="tia_VII_prev()">
+                      <span class="btn_placeholder_sign">&lt;</span>
+                    </button>
+                    <div name="tia_7_img" class="carousel_image_wrapper">
+                      <img src="images/TIA_VII_Images/TIAVII_Introductory_Text.png"
+                        alt="Screenshots from the Trouble in Andromeda VII game"
+                        class="carousel_image">
+                    </div>
+                    <div name="tia_7_img" class="carousel_image_wrapper">
+                      <img src="images/TIA_VII_Images/TIAVII_Level_02_01.png"
+                        alt="Screenshots from the Trouble in Andromeda VII game"
+                        class="carousel_image">
+                    </div>
+                    <div name="tia_7_img" class="carousel_image_wrapper">
+                      <img src="images/TIA_VII_Images/TIAVII_Level02_02.png"
+                        alt="Screenshots from the Trouble in Andromeda VII game"
+                        class="carousel_image">
+                    </div>
+                    <div name="tia_7_img" class="carousel_image_wrapper">
+                      <img src="images/TIA_VII_Images/TIAVII_Level03_02.png"
+                        alt="Screenshots from the Trouble in Andromeda VII game"
+                        class="carousel_image">
+                    </div>
+                    <div name="tia_7_img" class="carousel_image_wrapper">
+                      <img src="images/TIA_VII_Images/TIAVII_Level05_02.png"
+                        alt="Screenshots from the Trouble in Andromeda VII game"
+                        class="carousel_image">
+                    </div>
+                    <button type="next_button" class="next_btn" onclick="tia_VII_next()">
+                      <span class="btn_placeholder_sign">&gt;</span>
+                    </button>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #d3dfdf">
+                      <h4 class="date_stamp_header">Technologies:</h4>
+                      <p class="text_box_text">
+                        2D-Space Shooter made with Unity<br>
+                        Code: C#
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #D1D1FF;">
+                      <h4 class="date_stamp_header">About the App</h4>
+                      <p class="text_box_text">
+                        Trouble in Andromeda VII game is designed to be a nice little, space shooter of the classic type. 
+                        A minigame, perfect for playing in between and taking five minutes off: 
+                        Shoot some asteroids or some alien space ships – enjoy watching them explode… 
+                        When players finished a level or two they might just turn off the app and switch back on later.
+                        As players progress in the game they get more powerful weapons and collect more powerful boosters (health, energy and shield) 
+                        because – of course – enemies and level hazards become more dangerous.
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="app_download_section">
+                    <section id="TIA_VII_download_section" class="app_download_box">
+                        <h4 class="download_header">
+                            Download the App:
+                        </h4>
+                        <p class="download_box_text">
+                            <b>Windows (x86) – 64 bit:</b><br>
+                            <a class="download_box_link">Trouble in Andromeda VII</a>
+                            <br>(MAC OS & Linux Versions will follow soon)
+                        </p>
+                    </section>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #D1D1FF;">
+                      <h4 class="date_stamp_header">Background of the Game</h4>
+                      <p class="text_box_text">
+                        This one started off as a little side project when I had just finished the basic features of my D&D-character-sheet-App, 
+                        had cleaned the code and had written comments for publishing the code on GitHub. After a lot of commenting I felt the urge to do something more splashy.*
+                        Of course there are already thousands of space shooters out there. The concept is surely far from being a genuine new idea. 
+                        But hey: space shooters are still fun anyway. To be honest, in the beginning that was the main the reason to make this little game.
+                        But, soon after starting the development process I realized this was a project within a practicable scope for a single person to finish in a reasonable amount of time. 
+                        So I thought this would be probably a good way to demonstrate the skillset required to develop with Unity until the larger projects have progressed further on.
+                        <br><br>Have fun trying it out!
+                      </p>
+                    </div>
+                  </section>
+
+                  <section id="TTT_banner_section" class="project_banner">
+                    <h4 id="TTT_header" class="project_header">
+                        Tiny Tinkle Tigers
+                    </h4>
+                    <div class="project_icon_wrapper">
+                        <image src="images/TinyTinkleTigers_Icon.png" class="project_icon_props">
+                        </image>
+                    </div>
+                  </section>
+
+                  <section id="TTT_carousel_section" class="carousel_wrapper">
+                    <button type="previous_button" class="prev_btn" onclick="ttt_prev()">
+                      <span class="btn_placeholder_sign">&lt;</span>
+                    </button>
+                    <div name="ttt_img" class="carousel_image_wrapper">
+                      <img src="images/TTT_Images/TTT_Fading_Logo.png"
+                        alt="Screenshots from the Tiny Tinkle Tigers mobile game"
+                        class="carousel_image">
+                    </div>
+                    <div name="ttt_img" class="carousel_image_wrapper">
+                      <img src="images/TTT_Images/TTT_Single_Kitten_Run_01.png"
+                        alt="Screenshots from the Tiny Tinkle Tigers mobile game"
+                        class="carousel_image">
+                    </div>
+                    <div name="ttt_img" class="carousel_image_wrapper">
+                      <img src="images/TTT_Images/TTT_Single_Kitten_Run_02.png"
+                        alt="Screenshots from the Tiny Tinkle Tigers mobile game"
+                        class="carousel_image">
+                    </div>
+                    <div name="ttt_img" class="carousel_image_wrapper">
+                      <img src="images/TTT_Images/TTT_MultiKittens_Score_01.png"
+                        alt="Screenshots from the Tiny Tinkle Tigers mobile game"
+                        class="carousel_image">
+                    </div>
+                    <div name="ttt_img" class="carousel_image_wrapper">
+                      <img src="images/TTT_Images/TTT_MultiKittens_Score_02.png"
+                        alt="Screenshots from the Tiny Tinkle Tigers mobile game"
+                        class="carousel_image">
+                    </div>
+                    <button type="next_button" class="next_btn" onclick="ttt_next()">
+                      <span class="btn_placeholder_sign">&gt;</span>
+                    </button>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #d3dfdf">
+                      <h4 class="date_stamp_header">Technologies:</h4>
+                      <p class="text_box_text">
+                        2D casual mobile game made with Unity<br>
+                        Code: C#
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="text_box_wrapper">
+                    <div class="text_box" style="background-color: #D1D1FF;">
+                      <h4 class="date_stamp_header">About the App</h4>
+                      <p class="text_box_text">
+                        Tiny Tinkle Tigers is meant as fun casual game for mobile devices, playable time and time again.
+                        In Tiny Tinkle Tigers you subscribe to the mission of getting more and more little kittens house trained. 
+                        To accomplish this end your have to gently point them in the direction of their destination: the cat tray. But, be vigilant! 
+                        The kittens arriving on the map still do not have very much control over their bladder…
+                        Gather experience points (XP) as you swipe away one puddle after another and send more and more little kittens to the cat tray. 
+                        Enjoy the increasing kitten madness as their numbers rise and the obstacles in the way!
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="app_download_section">
+                    <section id="TTT_download_section" class="app_download_box">
+                        <h4 class="download_header">
+                            Download the App:
+                        </h4>
+                        <p class="download_box_text">
+                            <b>Androidk APK:</b><br>
+                            <a class="download_box_link">Tiny Tinkle Tigers</a>
+                            <br>(ZIP-file)
+                        </p>
+
+                    </section>
+                </section>
+
+                <section id="FoD_banner_section" class="project_banner">
+                  <h4 id="FoD_header" class="project_header">
+                      Farm of the Dead
+                  </h4>
+                </section>          
+                
+                <section id="FOD_carousel_section" class="carousel_wrapper">
+                  <button type="previous_button" class="prev_btn" onclick="fod_prev()">
+                    <span class="btn_placeholder_sign">&lt;</span>
+                  </button>
+                  <div name="fod_img" class="carousel_image_wrapper">
+                    <img src="images/FOD_Images/Till_Fields/TillFields_Grow_and_Harvest_Crops_01.png"
+                      alt="Screenshots from the 'Farm of the Dead'-survival game, the player planting and harvesting crops"
+                      class="carousel_image">
+                  </div>
+                  <div name="fod_img" class="carousel_image_wrapper">
+                    <img src="images/FOD_Images/Till_Fields/TillFields_Grow_and_Harvest_Crops_02.png"
+                      alt="Screenshots from the 'Farm of the Dead'-survival game, the player planting and harvesting crops"
+                      class="carousel_image">
+                  </div>
+                  <div name="fod_img" class="carousel_image_wrapper">
+                    <img src="images/FOD_Images/Till_Fields/TillFields_Grow_and_Harvest_Crops_03.png"
+                      alt="Screenshots from the 'Farm of the Dead'-survival game, the player planting and harvesting crops"
+                      class="carousel_image">
+                  </div>
+                  <div name="fod_img" class="carousel_image_wrapper">
+                    <img src="images/FOD_Images/Till_Fields/TillFields_Grow_and_Harvest_Crops_04.png"
+                      alt="Screenshots from the 'Farm of the Dead'-survival game, the player planting and harvesting crops"
+                      class="carousel_image">
+                  </div>
+                  <div name="fod_img" class="carousel_image_wrapper">
+                    <img src="images/FOD_Images/Till_Fields/TillFields_Grow_and_Harvest_Crops_05.png"
+                      alt="Screenshots from the 'Farm of the Dead'-survival game, the player planting and harvesting crops"
+                      class="carousel_image">
+                  </div>
+                  <div name="fod_img" class="carousel_image_wrapper">
+                    <img src="images/FOD_Images/Till_Fields/TillFields_Grow_and_Harvest_Crops_06.png"
+                      alt="Screenshots from the 'Farm of the Dead'-survival game, the player planting and harvesting crops"
+                      class="carousel_image">
+                  </div>
+                  <div name="fod_img" class="carousel_image_wrapper">
+                    <img src="images/FOD_Images/Till_Fields/TillFields_Grow_and_Harvest_Crops_07.png"
+                      alt="Screenshots from the 'Farm of the Dead'-survival game, the player planting and harvesting crops"
+                      class="carousel_image">
+                  </div>
+                  <div name="fod_img" class="carousel_image_wrapper">
+                    <img src="images/FOD_Images/Till_Fields/TillFields_Grow_and_Harvest_Crops_08.png"
+                      alt="Screenshots from the 'Farm of the Dead'-survival game, the player planting and harvesting crops"
+                      class="carousel_image">
+                  </div>
+                  <button type="next_button" class="next_btn" onclick="fod_next()">
+                    <span class="btn_placeholder_sign">&gt;</span>
+                  </button>
+                </section>
+
+                <section class="text_box_wrapper">
+                  <div class="text_box" style="background-color: #d3dfdf">
+                    <h4 class="date_stamp_header">Game Teaser</h4>
+                    <p class="text_box_text">
+                      It is a bright day… You enjoy the morning sun tickling your nose while you tend to the fields after you already fed the animals at dawn. 
+                      As the smell of the ripe tomatoes reaches your nose and you glance at the reflections of light dancing on the growing plants and blooming flowers 
+                      and you think to yourself: ‚What a wonderful world!‘ <br>
+                      Then a different scent creeps into your nostrils. <br>
+                      The revolting sweet stench of rotting flesh. <br>
+                      – You can already hear the buzzing of the bluebottles. <br>
+                      Seconds later a twiching thing of blue and green appears in the periphery of your sight.<br>
+                      There behind the fence…<br>
+                      One of them…<br>
+                      As you take a closer look, you can behold it in all its ghastly form…<br>
+                      Now you remember…<br>
+                      It is more than remarkable that you can actually forget – even for a short moment:<br>
+                      The world already ended…
+                    </p>
+                  </div>
+                </section>
+
+                <div class="carousel_image_wrapper" style="display: flex;">
+                  <image src="images/FOD_Images/Gather_Resources/FoD_gather_resources.gif" 
+                       alt="An animated scene from the 'Farm of the Dead'-game, the player chopping wood."
+                       class="carousel_image">
+                </div>
+
+                <section class="text_box_wrapper">
+                  <div class="text_box" style="background-color: #D1D1FF;">
+                    <h4 class="date_stamp_header">About the App</h4>
+                    <p class="text_box_text">
+                      Farm of the Dead is (planned as) a farming and a survival game at once – but with the focus on farming, building, crafting and gathering of resources:
+                      When the game begins the player assumes the role of a survivor of yet another zombie apocalypse.
+                      While fleeing from some of those gruesome fellows the players character stumbles upon an abandoned farm. 
+                      What in this very moment is no more than a – hopefully – relatively safe shelter for the night quickly becomes a new home.
+                      As players take a look around they will realize there are not only – potentially dwindling – 
+                      supplies left here but a lot of tools, seeds that could bear fruit, a well for fresh water and in the basement… 
+                      even a generator for electricity.
+                      If they would repair some of the fences and install a few security barriers they could actually endure in this place – at least for a while.
+                      And there is the goal of the game: build a relatively safe home for yourself – and if you ever meet a living human being again – maybe even others…
+                    </p>
+                  </div>
+                </section>
+
+              <section class="page_foot"></section>
+
+        </main>
+
+    </body>
+
+    <footer>
+
+        <section id="footer_left_section" class="footer_text">
+            Contact Me:<br>
+            <a href="mailto:robert@schmiederdevelopment.net" class="footer_link">
+                robert@schmiederdevelopment.net</a>
+          </section>
+
+          <section id="footer_mid_section" class="footer_text">
+            Me on GitHub:<br>
+            <a href="https://github.com/SchmiederDev" class="footer_link">SchmiederDev</a>
+          </section>
+
+          <section id="footer_right_section" class="footer_text">
+            <adress id="footer_adress" class="footer_text">
+              Robert Schmieder: Game and Software Developer
+              <br>
+                Durango
+            </adress>
+          </section>
+
+    </footer>
+
+
+</html>
