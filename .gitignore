@@ -1,0 +1,4 @@
+# ignore all png's
+*.png
+*.gif
+*.ico
