@@ -289,14 +289,12 @@ body{
     background-color: #D1D1FF;
     border-radius: 15px;
     width: 50%;
-    margin-right: 150px;
 }
 
 .text_box_text {
 
     font-size: 20px;
     font-family: Source Sans Pro, Georgia, Serif;
-    font-weight: 600;
 
     line-height: 180%;
 
@@ -552,6 +550,15 @@ body{
     padding-right: 10px;
 }
 
+.download_disclaimer_text{
+    font-size: 12px;
+    font-family: Source Sans Pro, Georgia, Serif;
+
+    padding-top: 5x;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .download_box_link{
 
     color: blue;
@@ -562,6 +569,21 @@ body{
 
 #E-Citera_banner_section{
     background-color: #282828;
+}
+
+#E-Citera_banner_section{
+    background-color: #282828;
+}
+
+#SeaFeed_banner_section {
+    background-color: #0099b7;
+
+}
+
+
+#SeaFeed_download_section
+{
+    height: 300px;
 }
 
 #CharacterSheet_banner_section{
