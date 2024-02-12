@@ -324,12 +324,13 @@ body{
 
 #my_projects_header_section {
     display: flex;
+    flex-direction: column;
 
     align-items: center;
     justify-content: center;
 
     background-color: #9595ff;
-    height: 125px;
+    height: 150px;
 }
 
 #my_projects_body_section{
@@ -338,8 +339,8 @@ body{
     grid-template-columns: 1fr, 1fr, 1fr, 1fr;
     grid-template-rows: 1fr, 1fr;
     grid-template-areas:
-        ". eCitera_area charSheet_area ."
-        ". andromeda_area FoD_area .";
+        ". eCitera_area seafeed_area ."
+        ". andromeda_area charSheet_area .";
 
     justify-items: center;
     align-items: center;
@@ -353,6 +354,14 @@ body{
     grid-area: eCitera_area;
     align-self: center;
     justify-self: center;
+}
+
+.project_grid_SeaFeed
+{
+    grid-area: seafeed_area;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 50px;
 }
 
 .project_grid_CharSheet
@@ -369,13 +378,6 @@ body{
     align-self: center;
     justify-self: center;
     margin-bottom: 50px;
-}
-
-.project_grid_FoD
-{
-    grid-area: FoD_area;
-    align-self: center;
-    justify-self: center;
 }
 
 .project_header {

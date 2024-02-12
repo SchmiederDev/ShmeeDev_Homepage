@@ -6,9 +6,9 @@ var dark_gray_lightUp = "#303238";
 
 const image_files =
 ["images/E_Citera_Icon.png", "images/E-Citera_Images/E-Citera_MainPage_00.png",
-"images/CharSheet_App_Icon.png", "images/MainWindow_Full_View_02.png",
+"images/SeaFeed/SeaFeed_Icon_Plankton.png", "images/SeaFeed/SeaFeed_DemoShot_1280x720.png",
 "images/TIA_VII_Icon.png", "images/TIA_VII_Level02_View.png",
-"images/FoD_TillFields_View.png"];
+"images/CharSheet_App_Icon.png", "images/MainWindow_Full_View_02.png"];
 
 function set_image_swapped(caller)
 {
