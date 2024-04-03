@@ -320,6 +320,10 @@ body{
     margin-top: 10px;
 }
 
+#code_learning_header {
+    margin-top: 75px;
+}
+
 #my_projects_header_section {
     display: flex;
     flex-direction: column;
