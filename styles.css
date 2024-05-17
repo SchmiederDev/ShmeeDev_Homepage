@@ -113,6 +113,17 @@ body{
     padding-left: 215px;
  }
 
+ .page_content_disclaimer_v4 {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #3e434b;
+    height: 150px;
+    max-height: 200px;
+ }
+
  .content_disclaimer_header {
     /*alternat for darker bg: #e8e8e8*/
     color: #26292D;
@@ -195,6 +206,10 @@ body{
     margin-left: 200px;
 }
 
+#released_making_section {
+    margin-top: 25px;
+}
+
 .title_bar_wrapper {
     display: flex;
     align-items: center;
@@ -218,6 +233,20 @@ body{
     padding-top: 10px;
     text-align: center;
 }
+
+.projects_section_title_bar {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #3e434b;
+    height: 150px;
+    max-height: 200px;
+
+    margin-top: 100px;
+    margin-bottom: 150px;
+ }
 
 .large_section_title_bar {
     display: flex;
@@ -472,6 +501,14 @@ body{
 
 }
 
+.authorship_header_h3_02 {
+    color: #f7f2df;
+    font-family: Times, Georgia, Serif;
+    font-size: 48px;
+    text-align: center;
+
+}
+
 .project_banner {
     display: flex;
     flex-direction: column;
@@ -502,6 +539,16 @@ body{
 .project_icon_props {
     height: 150px;
     max-height: 150px;
+
+    min-width: 50px;
+    width: min(100%, 150px);
+
+    object-fit: contain;
+}
+
+#descent_icon_props {
+    height: 300px;
+    max-height: 300px;
 
     min-width: 50px;
     width: min(100%, 150px);
@@ -618,11 +665,25 @@ body{
 
 #FoD_banner_section {
     background-color: #f7f2df;
-    height: 150px;
+    height: 200px;
 }
 
 #FoD_header {
     font-size: 36px;
+}
+
+#DoubleTreason_banner_section {
+    background-color: #4f1236;
+    height: 400px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+#Descent_banner_section {
+    background-color: #3c081a;
+    height: 350px;
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
 
 .page_foot {
