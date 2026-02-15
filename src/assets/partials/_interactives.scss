@@ -1,0 +1,50 @@
+@use "./sass-vars" as *;
+
+a {
+    text-decoration: underline;
+    text-underline-offset: $link-underline-offset;
+    padding: $gap-025;
+    line-height: $line-height-15;
+
+    &:hover {
+        text-underline-offset: $link-underline-offset-double;
+    }
+    &:focus-visible {
+        text-decoration: none;
+        outline: 1.5px solid currentColor;
+        border-radius: $border-radius-025;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: currentColor;
+            text-underline-offset: $link-underline-offset;
+        }
+    }
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-gray);
+}
+
+button {
+    padding: $gap-025 $gap-05;
+    outline: 2.5px solid var(--color-gray);
+    border-radius: $border-radius-025;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-gray);
+        color: var(--color-yellow);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    button {
+        transition: all 150ms ease-in-out;
+    }
+
+    a {
+        transition: all 150ms ease-in-out;
+    }
+}

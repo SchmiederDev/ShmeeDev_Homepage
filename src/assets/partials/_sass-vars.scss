@@ -1,0 +1,118 @@
+
+/* ============================================================
+SASS variables
+============================================================== */
+
+// Text styling
+$line-height-15: 1.15;
+$line-height-25: 1.25;
+$line-height-35: 1.35;
+$line-height-5: 1.5;
+
+// link styling
+$link-underline-offset: 0.25rem;
+$link-underline-offset-double: 0.4rem;
+
+// general styling
+$border-radius-025: 0.25rem;
+
+// Spacing
+
+$gap-025: 0.25rem;
+$gap-05: 0.5rem;
+$gap-075: 0.75rem;
+$gap-1: 1rem;
+$gap-1-25: 1.25rem;
+$gap-1-5: 1.5rem;
+$gap-2: 2rem;
+$gap-2-5: 2.5rem;
+$gap-3: 3rem;
+$gap-4: 4rem;
+$gap-5: 5rem;
+$gap-6: 6rem;
+$gap-8: 8rem;
+$gap-10: 10rem;
+
+// Functions
+@function pxToEm($target-px, $base-px: 16) {
+    @return calc($target-px / $base-px) * 1em;
+}
+
+@function pxToRem($target-px, $base-px: 16) {
+    @return calc($target-px / $base-px) * 1rem;
+}
+
+// breakpoints
+
+// device widths used in clamped() function
+$device-smartphone: 350;
+$device-tabletSmall: 550;
+$device-tabletMedium: 768;
+$device-tabletLarge: 1024;
+$device-laptop: 1280;
+$device-laptopLarge: 1440;
+$device-monitor: 1690;
+$device-wide: 1920;
+$device-headerDesktop: 1200;
+
+$breakpoint-min-xxs: pxToEm(350);
+$breakpoint-min-xs: pxToEm(550);
+$breakpoint-min-sm: pxToEm(768);
+$breakpoint-min-md: pxToEm(1024);
+$breakpoint-min-lg: pxToEm(1280);
+$breakpoint-min-xl: pxToEm(1440);
+$breakpoint-min-xxl: pxToEm(1690);
+$breakpoint-min-hd: pxToEm(1920);
+$breakpoint-min-header-desktop: pxToEm(1200);
+
+$breakpoint-max-xxs: pxToEm(350 - 1);
+$breakpoint-max-xs: pxToEm(550 - 1);
+$breakpoint-max-sm: pxToEm(768 - 1);
+$breakpoint-max-md: pxToEm(1024 - 1);
+$breakpoint-max-lg: pxToEm(1280 - 1);
+$breakpoint-max-xl: pxToEm(1440 - 1);
+$breakpoint-max-xxl: pxToEm(1690 - 1);
+$breakpoint-max-hd: pxToEm(1920 - 1);
+$breakpoint-max-header-desktop: pxToEm(1200 - 1);
+
+/* ============================================================
+Mixins
+============================================================== */
+
+/**
+ * Mixin for defining values at a specific mediaQuery
+ *
+ * @param {string} $width - min breakpoint
+ */
+@mixin respondMin($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+/**
+ * Mixin for defining values at a specific mediaQuery
+ *
+ * @param {string} $width - max breakpoint
+ */
+@mixin respondMax($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+/**
+ * Mixin for defining values at a min and max mediaQuery
+ *
+ * @param {string} $minWidth - min-breakpoint
+ * @param {string} $maxWidth - max-breakpoint
+ */
+@mixin respondMinMax($minWidth, $maxWidth) {
+    @media screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+        @content;
+    }
+}
+@mixin respondOrientation($orientation) {
+    @media (orientation: $orientation) {
+        @content;
+    }
+}

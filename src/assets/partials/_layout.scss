@@ -1,0 +1,56 @@
+@use "./sass-vars" as *;
+
+/* ============================================================
+Page Layouts
+============================================================== */
+
+.flow > * + * {
+    margin-top: var(--flow-space);
+}
+
+[class*="section--"] {
+    background-color: var(--color-section-bg);
+    color: var(--color-section-color);
+}
+
+.section--gray {
+    --color-section-bg: var(--color-gray);
+    --color-section-color: var(--color-yellow);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container {
+    padding-inline: $gap-3;
+    padding-block: $gap-5;
+
+    @include respondMax($breakpoint-max-xs) {
+        padding: $gap-3 $gap-2;
+    }
+}
+
+
+/* ============================================================
+Header & Footer
+============================================================== */
+
+header,
+footer {
+    padding: $gap-2 $gap-3;
+
+    @include respondMax($breakpoint-max-xs) {
+        padding: $gap-2 $gap-2;
+    }
+
+    a,
+    a:visited {
+        --color-link: var(--color-yellow);
+    }
+
+    ul {
+        list-style: none;
+    }
+}

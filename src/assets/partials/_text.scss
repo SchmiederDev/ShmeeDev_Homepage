@@ -1,0 +1,39 @@
+@use "./sass-vars" as *;
+
+h1,
+.h1 {
+    font-size: clamp(1.5rem, 0.7211rem + 3.5608vw, 3rem);
+    line-height: $line-height-35;
+    font-weight: 700;
+
+    @include respondMax($breakpoint-max-md) {
+        line-height: $line-height-25;
+    }
+}
+
+h2,
+.h2 {
+    font-size: clamp(1.5rem, 0rem + 3.125vw, 2rem);
+    line-height: $line-height-25;
+    max-width: 31ch;
+}
+h3,
+.h3 {
+    font-size: clamp(1.5rem, 0.9rem + 1.25vw, 1.7rem);
+    line-height: $line-height-25;
+}
+h4,
+.h4 {
+    font-size: clamp(1.4rem, 1.8rem + -0.625vw, 1.5rem);
+    line-height: $line-height-25;
+}
+h5,
+.h5 {
+    font-size: var(--font-size-body-m);
+    line-height: $line-height-25;
+}
+h6,
+.h6 {
+    font-size: var(--font-size-body-s);
+    line-height: $line-height-25;
+}
