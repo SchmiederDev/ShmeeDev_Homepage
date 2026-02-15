@@ -1,0 +1,17 @@
+{# params: idSection, idHeading, headingText, contentText, linkHref, linkText, imgSrc, imgAlt #}
+{% macro homeCard(params) %}
+<section id="{{ params.idSection }}" class="section section--yellow">
+    <div class="section__text-container">
+        <h2 id="{{ params.idHeading }}">{{ params.headingText }}</h2>
+        <p>{{ params.contentText }}</p>
+        {% if params.linkHref %}
+        <a href="{{ params.linkHref }}" aria-describedby="{{ params.idHeading }}">
+            {{ params.linkText }}
+        </a>
+        {% endif %}
+    </div>
+    <div class="section__img-container">
+      <img src="{{ params.imgSrc }}" alt="{{ params.imgAlt }}" eleventy:formats="webp" >
+    </div>
+</section>
+{% endmacro %}
