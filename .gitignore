@@ -1,3 +1,9 @@
 # ignore all png's
 *.gif
 *.ico
+
+# frontend
+node_modules
+
+# 11ty
+_site
