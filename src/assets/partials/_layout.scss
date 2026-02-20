@@ -40,13 +40,17 @@ breakout: 90.5rem // 1448px
 .content-grid {
   --padding-inline: 1rem;
   --content-max-width: 60ch;
-  --breakout-max-width: 90ch;
-  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+  --breakout-max-width: 110ch;
+  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)));
 
   display: grid;
   grid-template-columns:
-    [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2),
-      var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+    [full-width-start] minmax(var(--padding-inline), 1fr) 
+    /* start breakout and content */
+    [breakout-start] 0 
+    [content-start] min(100% - (var(--padding-inline) * 2),  var(--content-max-width)) [content-end] 
+    minmax(0, var(--breakout-size)) [breakout-end] 
+    minmax(var(--padding-inline), 1fr) [full-width-end];
   align-content: start;
 }
 
