@@ -54,6 +54,15 @@ order: 2
 -   title: Used in head's `<title>`, `<h1>` in overview list.
 -   listed: Used on pages to add that page to the 11ty-collection, e.g. used for main nav list
 
+
+## Image shortcode in Nunjucks
+
+Parmaters are given in quotes, comma-separated. Options are: src, alt, customClass.
+
+```
+{% image "./src/assets/images/blog/portfolio-color-palette-2.png", "Color palette with 3 orange, 3 blue and 6 grey colors", "my-class" %}
+```
+
 ## Ressources
 
 -   [11ty Eleventy Documentation](https://www.11ty.dev/docs/)

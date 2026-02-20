@@ -5,4 +5,4 @@ new Splide( '.splide' ).mount();
 
 
 
-console.log('hello my dear'); // eslint-disable-line
+console.log('in gallery'); // eslint-disable-line

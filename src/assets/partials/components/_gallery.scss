@@ -1,0 +1,30 @@
+@use "./custom-splidejs";
+
+// overrides
+.splide {
+  --splide-accent: var(--color-accent-primary);
+  --splide-gray-dark: var(--color-copy-bg);
+  padding-bottom: 3rem;
+}
+
+/* Add numbers to pagination buttons by CSS */
+.splide__pagination {
+  counter-reset: pagination-num;
+}
+
+.splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter( pagination-num );
+}
+
+.splide__pagination__page {
+  font-family: "Archivo Narrow Bold";
+  font-weight: 700;
+}
+
+// center img inside li
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
