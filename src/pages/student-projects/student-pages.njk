@@ -42,12 +42,23 @@ permalink: "student-projects/{{ student.title | slugify }}/"
 
 {% if student.responsibilities %}
   <h2>Responsibilities</h2>
+
   {% for item in student.responsibilities %}
-    <h3>{{item.role}}</h3>
-    {% for part in item.description %}
-    <p>{{part}}</p>
-    {% endfor %}
+
+    <div class="breakout two-column">
+      <div class="two-column__one">
+        <h3>{{item.role}}</h3>
+
+      </div>
+      <div class="two-column__two flow">
+        {% for part in item.description %}
+        <p>{{part}}</p>
+        {% endfor %}
+      </div>
+    </div>
+
   {% endfor %}
+
 {% endif %}
 
 
