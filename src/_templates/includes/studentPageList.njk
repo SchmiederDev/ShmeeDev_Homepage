@@ -1,0 +1,12 @@
+
+{% set currentUrl = page.url %}
+
+<ul class="main-nav__list student">
+    {% for page in student %}
+    <li>
+        <a href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="main-nav__link">
+            {{ page.title }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,168 @@
+[
+  {
+    "title": "Office Rush '95",
+    "aboutGame": [
+      "Sakura’s Journey is a twin-stick arena shooter with tower defense elements and boss fights.",
+      "The player assumes the role of „Kitsune hime“: a fox masked priest with demi-god qualities.",
+      "Players have to fight their way through increasingly challenging arenas and endless waves of enemies. In doing so, they can hone their skills and become evermore capable fighters as they upgrade every skill to their liking."
+    ],
+    "story": [
+      "The forsaken princess Takiyasha Hime has sworn bloody vengeance to the Kami who once betrayed her family. She has conjured an army of Yokai from the Land of Darkness – yomi no kuni – to wreak havoc in the temples worshipping those Kami. Only an essence of purity can cleanse the temples and free them of the evil which has befallen them: the Yokai-spirits haunting the once holy halls. This force is the character, Kitsune hime, and her spiritual totem: a holy sakura tree, an aspect of her own power."
+    ],
+    "responsibilities": [
+      {
+        "role": "Lead Game Designer",
+        "description": [
+          "As the Lead Game Designer on this project I developed the core mechanics and systems of the game in close collaboration with the other Game Designer on the project. I wrote the entire documentation for the game besides the classical Game Design Document, Vision Statement and Document, [...], Marketing: the content of our Itch.io-Page"
+        ]
+      },
+      {
+        "role": "Level Designer",
+        "description": [
+          "As the Level Designer of this project I designed 4 levels from start to finish, starting with research on Japanese temples which is where the game is set, l sketched several layouts, blocked out the levels (gray boxing) and also did the set dressing (placement of environment art assets).",
+          "I figured out the metrics for the game: size of the main character and enemies, level size and prop scale.",
+          "Based on my research on Japanese temples and Japanese religious architecture I wrote a guide for the Art Team on possible environment elements and set pieces and included references from real world Japanese temples. - During the entire development project I worked in close collaboration with the Art Lead and the Environment Artist"
+        ]
+      },
+      {
+        "role": "Narrative Design",
+        "description": [
+          "As the Narrative Designer of the project I did research on Japanese religion and the cultural concept of Yokai (the enemies in the game - though not all Yokai are necessarily evil ;-) ).",
+          "This research informed the background story for the game, the character profile and the enemy roster occurring in the game. - I communicated intensively with the Art Team and together we figured out what was possible and defined the aesthetics & characters of the game."
+        ]
+      },
+      {
+        "role": "UI/ UX Design",
+        "description": [
+          "I was also responsible for specifying and refining the UI-Elements we needed based on the Game Design. - I created the Screen Flow for the game, produced low key and high key wireframes for screens and HUD and together with the UI-Artist of the project defined the aesthetic look, scale and positioning of the User Interface(s)."
+        ]
+      },
+      {
+        "role": "Scripting",
+        "description": [
+          "I supported the Engineering Team with a number of bug fixes and some features like enemy spawners, set up and programming HUD-elements or a directional indicator for the level goal."
+        ]
+      }
+    ],
+    "video": {
+      "type": "Gameplay",
+      "videoId": "KsPI_YePx_o",
+      "description": "The character runs throught the first dungeon and gathers three items."
+    }
+  },
+  {
+    "title": "Barque of Ra",
+    "aboutGame": [
+      "Sakura’s Journey is a twin-stick arena shooter with tower defense elements and boss fights.",
+      "The player assumes the role of „Kitsune hime“: a fox masked priest with demi-god qualities.",
+      "Players have to fight their way through increasingly challenging arenas and endless waves of enemies. In doing so, they can hone their skills and become evermore capable fighters as they upgrade every skill to their liking."
+    ],
+    "story": [
+      "The forsaken princess Takiyasha Hime has sworn bloody vengeance to the Kami who once betrayed her family. She has conjured an army of Yokai from the Land of Darkness – yomi no kuni – to wreak havoc in the temples worshipping those Kami. Only an essence of purity can cleanse the temples and free them of the evil which has befallen them: the Yokai-spirits haunting the once holy halls. This force is the character, Kitsune hime, and her spiritual totem: a holy sakura tree, an aspect of her own power."
+    ],
+    "responsibilities": [
+      {
+        "role": "Lead Game Designer",
+        "description": [
+          "As the Lead Game Designer on this project I developed the core mechanics and systems of the game in close collaboration with the other Game Designer on the project. I wrote the entire documentation for the game besides the classical Game Design Document, Vision Statement and Document, [...], Marketing: the content of our Itch.io-Page"
+        ]
+      },
+      {
+        "role": "Level Designer",
+        "description": [
+          "As the Level Designer of this project I designed 4 levels from start to finish, starting with research on Japanese temples which is where the game is set, l sketched several layouts, blocked out the levels (gray boxing) and also did the set dressing (placement of environment art assets).",
+          "I figured out the metrics for the game: size of the main character and enemies, level size and prop scale.",
+          "Based on my research on Japanese temples and Japanese religious architecture I wrote a guide for the Art Team on possible environment elements and set pieces and included references from real world Japanese temples. - During the entire development project I worked in close collaboration with the Art Lead and the Environment Artist"
+        ]
+      },
+      {
+        "role": "Narrative Design",
+        "description": [
+          "As the Narrative Designer of the project I did research on Japanese religion and the cultural concept of Yokai (the enemies in the game - though not all Yokai are necessarily evil ;-) ).",
+          "This research informed the background story for the game, the character profile and the enemy roster occurring in the game. - I communicated intensively with the Art Team and together we figured out what was possible and defined the aesthetics & characters of the game."
+        ]
+      },
+      {
+        "role": "UI/ UX Design",
+        "description": [
+          "I was also responsible for specifying and refining the UI-Elements we needed based on the Game Design. - I created the Screen Flow for the game, produced low key and high key wireframes for screens and HUD and together with the UI-Artist of the project defined the aesthetic look, scale and positioning of the User Interface(s)."
+        ]
+      },
+      {
+        "role": "Scripting",
+        "description": [
+          "I supported the Engineering Team with a number of bug fixes and some features like enemy spawners, set up and programming HUD-elements or a directional indicator for the level goal."
+        ]
+      }
+    ],
+    "video": {
+      "type": "Trailer",
+      "videoId": "KsPI_YePx_o",
+      "description": "Three scenes of the game."
+    }
+  },
+  {
+    "title": "Sakura’s Journey",
+    "aboutGame": [
+      "Sakura’s Journey is a twin-stick arena shooter with tower defense elements and boss fights.",
+      "The player assumes the role of „Kitsune hime“: a fox masked priest with demi-god qualities.",
+      "Players have to fight their way through increasingly challenging arenas and endless waves of enemies. In doing so, they can hone their skills and become evermore capable fighters as they upgrade every skill to their liking."
+    ],
+    "story": [
+      "The forsaken princess Takiyasha Hime has sworn bloody vengeance to the Kami who once betrayed her family. She has conjured an army of Yokai from the Land of Darkness – yomi no kuni – to wreak havoc in the temples worshipping those Kami. Only an essence of purity can cleanse the temples and free them of the evil which has befallen them: the Yokai-spirits haunting the once holy halls. This force is the character, Kitsune hime, and her spiritual totem: a holy sakura tree, an aspect of her own power."
+    ],
+    "responsibilities": [
+      {
+        "role": "Lead Game Designer",
+        "description": [
+          "As the Lead Game Designer on this project I developed the core mechanics and systems of the game in close collaboration with the other Game Designer on the project. I wrote the entire documentation for the game besides the classical Game Design Document, Vision Statement and Document, [...], Marketing: the content of our Itch.io-Page"
+        ]
+      },
+      {
+        "role": "Level Designer",
+        "description": [
+          "As the Level Designer of this project I designed 4 levels from start to finish, starting with research on Japanese temples which is where the game is set, l sketched several layouts, blocked out the levels (gray boxing) and also did the set dressing (placement of environment art assets).",
+          "I figured out the metrics for the game: size of the main character and enemies, level size and prop scale.",
+          "Based on my research on Japanese temples and Japanese religious architecture I wrote a guide for the Art Team on possible environment elements and set pieces and included references from real world Japanese temples. - During the entire development project I worked in close collaboration with the Art Lead and the Environment Artist"
+        ]
+      },
+      {
+        "role": "Narrative Design",
+        "description": [
+          "As the Narrative Designer of the project I did research on Japanese religion and the cultural concept of Yokai (the enemies in the game - though not all Yokai are necessarily evil ;-) ).",
+          "This research informed the background story for the game, the character profile and the enemy roster occurring in the game. - I communicated intensively with the Art Team and together we figured out what was possible and defined the aesthetics & characters of the game."
+        ]
+      },
+      {
+        "role": "UI/ UX Design",
+        "description": [
+          "I was also responsible for specifying and refining the UI-Elements we needed based on the Game Design. - I created the Screen Flow for the game, produced low key and high key wireframes for screens and HUD and together with the UI-Artist of the project defined the aesthetic look, scale and positioning of the User Interface(s)."
+        ]
+      },
+      {
+        "role": "Scripting",
+        "description": [
+          "I supported the Engineering Team with a number of bug fixes and some features like enemy spawners, set up and programming HUD-elements or a directional indicator for the level goal."
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "src/pages/student-projects/images-sakuras-journey/01_IMG_GP_SakurasJourney_EarthArena.png",
+        "alt": "Color palette with 3 orange, 3 blue and 6 grey colors"
+      },
+      {
+        "src": "src/pages/student-projects/images-sakuras-journey/02_IMG_GP_SakurasJourney_FireArena.png",
+        "alt": "Color palette with 3 orange, 3 blue and 6 grey colors"
+      },
+      {
+        "src": "src/pages/student-projects/images-sakuras-journey/03_IMG_GP_SakurasJourney_WaterArena.png",
+        "alt": "Color palette with 3 orange, 3 blue and 6 grey colors"
+      },
+      {
+        "src": "src/pages/student-projects/images-sakuras-journey/04_IMG_GP_SakurasJourney_WindArena.png",
+        "alt": "Color palette with 3 orange, 3 blue and 6 grey colors"
+      }
+    ]
+  }
+]
