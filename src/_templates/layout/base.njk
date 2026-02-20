@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="{{ language or site.language }}">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{ title }}</title>
-        <link rel="icon" type="image/svg" href="/assets/images/FAVICON.svg" />
-        <link rel="stylesheet" href="/assets/style.css" />
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/svg" href="/assets/images/FAVICON.svg"/>
+    <link rel="stylesheet" href="/assets/style.css"/>
 
-        <link rel="preload" href="/assets/fonts/archivo-narrow-bold.ttf" as="font" type="font/ttf" crossorigin>
-        <link rel="preload" href="/assets/fonts/spectral-regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/archivo-narrow-bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/spectral-regular.ttf" as="font" type="font/ttf" crossorigin>
 
-        <link rel="canonical" href="{{ site.url + page.url }}" />
+    <link rel="canonical" href="{{ site.url + page.url }}"/>
 
-        {% if hidePage %}
-        <meta name="robots" content="{{ hidePage }}" />
-        {% else %}
-        <meta name="robots" content="index,follow" />
+    {% if hidePage %}
+      <meta name="robots" content="{{ hidePage }}"/>
+    {% else %}
+      <meta name="robots" content="index,follow"/>
 
-        <meta name="author" content="Robert Schmieder" />
-        <meta name="description" content="{{ site.seo.desc }}" />
+      <meta name="author" content="Robert Schmieder"/>
+      <meta name="description" content="{{ site.seo.desc }}"/>
 
-        <!-- Open Graph -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="{{ site.seo.title }}" />
-        <meta property="og:site_name" content="Robert Schmieder Game & Level Designer" />
-        <meta property="og:locale" content="en-EN" />
-        <meta property="og:description" content="{{ site.seo.desc }}" />
-        <meta property="og:url" content="{{ site.url + page.url }}" />
-        <meta property="og:image" content="{{ site.url + site.seo.img }}" />
-        <meta property="og:image:alt" content="{{ site.seo.imgAlt }}" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        {% endif %}
-    </head>
+      <!-- Open Graph -->
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="{{ site.seo.title }}"/>
+      <meta property="og:site_name" content="Robert Schmieder Game & Level Designer"/>
+      <meta property="og:locale" content="en-EN"/>
+      <meta property="og:description" content="{{ site.seo.desc }}"/>
+      <meta property="og:url" content="{{ site.url + page.url }}"/>
+      <meta property="og:image" content="{{ site.url + site.seo.img }}"/>
+      <meta property="og:image:alt" content="{{ site.seo.imgAlt }}"/>
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
+    {% endif %}
+  </head>
 
-    <body>
-        {% include "../includes/header.njk" %}
-        <main>
-            {{ content | safe }}
-        </main>
+  <body>
+    <a href="#main-content" class="skiplink button visuallyhidden">Skip to main content</a>
+    {% include "../includes/header.njk" %}
+    <main id="main-content" class="content-grid flow">
+      {{ content | safe }}
+    </main>
 
-        {% include "../includes/footer.njk" %}
-        <script src="/assets/main.js"></script>
-    </body>
+    {% include "../includes/footer.njk" %}
+    {# <script type="module" src="/assets/main.js"></script> #}
+  </body>
 </html>

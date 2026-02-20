@@ -4,7 +4,6 @@
 ::after,
 ::before {
     box-sizing: border-box;
-    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-overflow-scrolling: touch;
@@ -30,15 +29,12 @@ html {
 body {
     margin: 0;
     padding: 0;
-    color: var(--color-gray);
-    font-family: "Archivo Narrow Regular", sans-serif;
-    font-size: var(--font-size-body-m);
-    line-height: $line-height-25;
-}
-
-p {
-  font-family: "Archivo Narrow Regular", sans-serif;
-
+    background-color: var(--color-copy-bg);
+    color: var(--color-copy-text);
+    font-family: "Spectral Regular", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-0);
+    line-height: $line-height-5;
 }
 
 h1,
@@ -60,13 +56,6 @@ fieldset,
 legend {
     margin: 0;
     padding: 0;
-}
-
-p {
-    max-width: 65ch;
-    line-height: $line-height-5;
-    word-break: break-word;
-    hyphens: auto;
 }
 
 input,

@@ -1,13 +1,27 @@
 :root {
-    --font-size-body-s: 1rem;
-    --font-size-body-m: 1.25rem;
-    --font-size-body-l: 2rem;
-    --color-gray: #323130;
-    --color-green: #225147;
-    --color-yellow: #f8f5df;
-    --color-lightgreen: #cdd6ae;
-    --color-link: var(--color-gray);
-    --color-section-bg: var(--color-green);
-    --color-section-color: var(--color-yellow);
-    --flow-space: 1rem;
+  --font-size--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+  --font-size--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  --font-size-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --font-size-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+  --font-size-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+  --font-size-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+  --font-size-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+  --font-size-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+
+  // colors
+  --color-white: #fff;
+  --color-gray: #323232;
+  --color-green: #b5f802;
+  --color-pink: #f802b5;
+  --color-blue: #02b5f8;
+  // color tokens
+  --color-accent: var(--color-green);
+  --color-link: var(--color-green);
+  --color-accent-primary: var(--color-green);
+  --color-accent-secondary: var(--color-pink);
+  --color-accent-tertiary: var(--color-blue);
+  --color-copy-text: var(--color-white);
+  --color-copy-bg: var(--color-gray);
+  // spacing
+  --flow-space: 1rem;
 }

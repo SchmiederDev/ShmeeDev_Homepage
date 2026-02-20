@@ -1,5 +1,4 @@
-.visuallyhidden,
-.visually-hidden {
+.visuallyhidden:not(:focus-visible):not(:active) {
     position: absolute;
     clip-path: inset(50%);
     overflow: hidden;
@@ -27,3 +26,8 @@
   font-family: "Spectral Semibold";
   font-weight: 600;
 }
+
+.color-gray {color: var(--color-gray);}
+.color-accent-primary {color: var(--color-accent-primary);}
+.color-accent-secondary {color: var(--color-accent-secondary);}
+.color-accent-tertiary {color: var(--color-accent-tertiary);}

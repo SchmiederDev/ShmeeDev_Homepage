@@ -76,7 +76,7 @@ $breakpoint-max-hd: pxToEm(1920 - 1);
 $breakpoint-max-header-desktop: pxToEm(1200 - 1);
 
 /* ============================================================
-Mixins
+Mixins: general
 ============================================================== */
 
 /**
@@ -114,5 +114,46 @@ Mixins
 @mixin respondOrientation($orientation) {
     @media (orientation: $orientation) {
         @content;
+    }
+}
+
+/* ============================================================
+Mixins: focus/hover
+============================================================== */
+
+/**
+* Mixin for slide out hover style
+* hover: sliding underline in ::after element
+* focus: outline around element
+*/
+@mixin hover-slide-focus(
+    $outlineWidth: 3px
+) {
+    position: relative;
+    outline: $outlineWidth solid transparent;
+    transition: outline-color .25s ease;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 0;
+        height: $outlineWidth;
+        background: var(--color-accent);
+        opacity: 0.6;
+        transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+    }
+
+    &:hover,
+    &:active {
+        &::after {
+            width: 100%;
+            opacity: 0.9;
+        }
+    }
+    &:focus-visible {
+      outline-color: var(--color-accent);
     }
 }
