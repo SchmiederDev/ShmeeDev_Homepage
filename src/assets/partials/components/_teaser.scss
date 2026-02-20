@@ -1,0 +1,19 @@
+@use "../sass-vars" as *;
+
+.project-teaser {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 200px));
+  gap: 1rem;
+
+  &__link {
+    @include hover-slide-focus;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 3/2;
+    padding: 1rem;
+    border: 3px solid var(--color-accent-primary);
+    border-radius: 20px;
+    text-decoration: none;
+  }
+}
