@@ -1,13 +1,11 @@
 
 {% set currentUrl = page.url %}
 
-<ul>
+<ul class="main-nav__list">
     {% for page in collections.pages %}
     <li>
-        <a href="{{ page.url | url }}" {{ 'aria-current=page' if currentUrl === page.url }}>
-            {{ page.data.headerLink }}
-            {% if page.data.icon %} {% inlineIcon page.data.icon %} {% endif %}
-            
+        <a href="{{ page.url | url }}" {{ 'aria-current=page' if currentUrl === page.url }} class="main-nav__link">
+            {{ page.data.title }}
         </a>
     </li>
     {% endfor %}
