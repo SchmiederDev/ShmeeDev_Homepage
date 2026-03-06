@@ -43,27 +43,57 @@ permalink: "student-projects/{{ student.title | slugify }}/"
 {% if student.responsibilities %}
   <h2>Responsibilities</h2>
 
-  {% for item in student.responsibilities %}
+  <div class="breakout flow skills">
+    {% for item in student.responsibilities %}
 
-    <div class="breakout two-column">
-      <div class="two-column__one">
-        <h3>{{item.role}}</h3>
+      <div class="two-column">
+        <div class="two-column__one flow">
+          <h3>{{item.role}}</h3>
+          {% if item.image %}
+          <div class="skill__img-wrapper">
+            {% image item.image.src, item.image.alt, "skill__img" %}
+          </div>
+          {% endif%}
 
+
+          {% if item.skillGallery[0].src %}
+            <div id="splide-skillGallery-{{ loop.index }}" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  {% for img in item.skillGallery %}
+                  <li class="splide__slide">
+                    {% image img.src, img.alt %}
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endif %}
+
+        </div>
+        <div class="two-column__two flow">
+          {% for part in item.description %}
+          <p>{{part}}</p>
+          {% endfor %}
+
+          {% if item.list %}
+          <ul class="">
+            {% for part in item.list %}
+            <li>{{part}}</li>
+            {% endfor %}
+          </ul>
+          {% endif%}
+        </div>
       </div>
-      <div class="two-column__two flow">
-        {% for part in item.description %}
-        <p>{{part}}</p>
-        {% endfor %}
-      </div>
-    </div>
 
-  {% endfor %}
+    {% endfor %}
+  </div>
 
 {% endif %}
 
 
 {% if student.gallery[0].src %}
-  <section class="splide breakout flow" aria-labelledby="carousel-heading">
+  <section id="splide-gallery" class="splide breakout flow" aria-labelledby="carousel-heading">
     <h2 id="carousel-heading">Project images</h2>
 
     <div class="splide__track">
@@ -81,17 +111,19 @@ permalink: "student-projects/{{ student.title | slugify }}/"
 
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', 
-    {
-      type  : 'fade',
-      rewind: true,
-      padding: '3rem',
-      gap:'2rem',
-      lazyLoad: 'nearby',
-    } );
-    splide.mount();
+    const galleries = document.querySelectorAll('.splide');
+    galleries.forEach(slide => {
+      let splide = new Splide(`#${slide.id}`, {
+        type  : 'fade',
+        rewind: true,
+        padding: '3rem',
+        gap:'2rem',
+        lazyLoad: 'nearby',
+      });
+      splide.mount();
+      console.log(splide);
+    });
   } );
 </script>
-
 
 <script defer src="/assets/vendor/splide-4.1.3/dist/js/splide.min.js"></script>
