@@ -1,0 +1,5 @@
+@use "../sass-vars" as *;
+
+.page-footer {
+  background-image: linear-gradient(to top, var(--color-gray), rgba(255, 255, 255, 0.15));
+}

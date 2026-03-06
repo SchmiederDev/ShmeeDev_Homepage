@@ -19,6 +19,10 @@
   content: counter( pagination-num );
 }
 
+.splide__pagination__page.is-active {
+  outline: 1px solid currentColor;
+}
+
 .splide__pagination__page {
   font-family: "Archivo Narrow Bold";
   font-weight: 700;

@@ -52,3 +52,19 @@
     color: var(--color-copy-text);
   }
 }
+
+.resume-link__link {
+  --color-link: var(--color-copy-bg);
+  text-decoration: none;
+  line-height: 1;
+  background-color: var(--color-accent-primary);
+  padding: 8px 16px;
+  border-radius: $border-radius-025;
+
+  &:hover,
+  &:focus-visible {
+    outline: 1px solid var(--color-accent-primary);
+    outline-offset: 2px;
+  }
+}
+
