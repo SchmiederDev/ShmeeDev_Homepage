@@ -1,12 +1,21 @@
+{# define nav variable #}
+{% set navPages = collections.all | eleventyNavigation %}
+{# define macro #}
+{% macro renderNavListItem(entry) -%}
+<li>
+  <a href="{%- if entry.url -%}{{ entry.url }}{%- else-%}{{ entry.data.page.url }}{%- endif -%}"{% if entry.url == page.url %} aria-current="page"{% endif %} class="main-nav__link ">
+    {%- if entry.data.title -%}{{ entry.data.title }}{%- else-%}{{ entry.data.student.title }}{%- endif -%}
+  </a>
 
-{% set currentUrl = page.url %}
+{%- if entry.children.length -%}
+  <ul class="main-nav__sub-list">
+    {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+  </ul>
+{%- endif -%}
+</li>
+{%- endmacro %}
 
+{# use macro #}
 <ul class="main-nav__list">
-    {% for page in collections.pages %}
-    <li>
-        <a href="{{ page.url | url }}" {{ 'aria-current=page' if currentUrl === page.url }} class="main-nav__link">
-            {{ page.data.title }}
-        </a>
-    </li>
-    {% endfor %}
+{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
 </ul>

@@ -4,7 +4,12 @@ pagination:
   data: student
   size: 1
   alias: student
+  addAllPagesToCollections: true
 permalink: "student-projects/{{ student.title | slugify }}/"
+eleventyNavigation:
+  key: studentproject
+  title: {{ student.title }}
+  parent: student
 ---
 
 <div class="hero full-width">
@@ -118,7 +123,6 @@ permalink: "student-projects/{{ student.title | slugify }}/"
         lazyLoad: 'nearby',
       });
       splide.mount();
-      console.log(splide);
     });
   } );
 </script>
