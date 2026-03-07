@@ -7,17 +7,14 @@ pagination:
 permalink: "student-projects/{{ student.title | slugify }}/"
 ---
 
-<div class="breakout">
-{% include "includes/studentPageList.njk" %}
+<div class="hero full-width">
+{% if student.heroImage.src %}
+{% heroimage student.heroImage.src, student.heroImage.alt, "full-width hero__img" %}
+{% endif %}
+<h1>{{ student.title }}</h1>
 </div>
 
-<h1>{{ student.title }}</h1>
 <hr class="color-accent-tertiary breakout">
-
-
-{% if student.image.src %}
-{% image student.image.src, student.image.alt, "twi__img" %}
-{% endif %}
 
 {% if student.aboutGame %}
   <h2>About the game</h2>

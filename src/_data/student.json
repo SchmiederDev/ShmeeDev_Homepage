@@ -1,6 +1,10 @@
 [
   {
     "title": "Office Rush '95",
+    "heroImage": {
+      "src": "src/pages/student-projects/images-office-rush/02_08_IMG_DOC_Office_Rush_Level_Final_Stage.png",
+      "alt": ""
+    },
     "aboutGame": [
       "Office Rush ‘95 is a local multi-player office simulation in which the two players compete for the title of “Employee of the Month”. Players have to complete as many office task assignments as possible to win. To get the job done players get to play funny mini games which simulate and mock the mundanity of certain kinds of office tasks. Players are not only tested for their skill during the mini games they are also equipped with means of sabotage to impede the progress of the other player. They can lock doors for the other player or push each other into an onerous, decelerating conversation with co-workers or superiors."
     ],
@@ -119,6 +123,10 @@
   },
   {
     "title": "Barque of Ra",
+    "heroImage": {
+      "src": "src/pages/student-projects/images-barque-of-ra/02_IMG_GP_Barque_of_Ra_Combat_03.png",
+      "alt": ""
+    },
     "aboutGame": [
       "Barque of Ra is a casual Tower Defense Game in which players delve into the underworld as the Sun God Ra on their holy Solar Barque. They must safely guide the souls of the perished through the 12 gates of Duat (the underworld) to the Afterlife. But beware! The demons of Duat will try the God and attack the Barque relentlessly."
     ],
@@ -231,6 +239,10 @@
   },
   {
     "title": "Sakura’s Journey",
+    "heroImage": {
+      "src": "src/pages/student-projects/images-sakuras-journey/03-GP-SakurasJourney-WaterArena.png",
+      "alt": ""
+    },
     "aboutGame": [
       "Sakura’s Journey is a twin-stick arena shooter with tower defense elements and boss fights.",
       "The player assumes the role of „Kitsune hime“: a fox masked priest with demi-god qualities.",

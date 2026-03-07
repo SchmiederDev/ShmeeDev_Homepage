@@ -1,0 +1,23 @@
+@use "../sass-vars" as *;
+
+.hero {
+  position: relative;
+
+  h1 {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    height: 100%;
+  }
+  &__img {
+    max-height: 85vh;
+    object-fit: cover;
+    opacity: 0;
+    animation: blendin 1.25s ease-in-out 0.25s 1 normal forwards;
+  }
+}
+
+@keyframes blendin {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
