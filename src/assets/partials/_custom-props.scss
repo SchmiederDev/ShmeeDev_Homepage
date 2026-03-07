@@ -10,16 +10,14 @@
 
   // colors
   --color-white: #fff;
-  --color-gray: #323232;
-  --color-green: #b5f802;
-  --color-pink: #f802b5;
-  --color-blue: #02b5f8;
+  --color-gray: #171717;
+  // --color-gray: #323232;
+  --color-pink: #ff0055;
+  --color-pink-dark: #b3003b;
+  --color-pink-light: #ff4d88;
   // color tokens
-  --color-accent: var(--color-green);
-  --color-link: var(--color-green);
-  --color-accent-primary: var(--color-green);
-  --color-accent-secondary: var(--color-pink);
-  --color-accent-tertiary: var(--color-blue);
+  --color-accent: var(--color-pink);
+  --color-link: var(--color-accent);
   --color-copy-text: var(--color-white);
   --color-copy-bg: var(--color-gray);
   // spacing
