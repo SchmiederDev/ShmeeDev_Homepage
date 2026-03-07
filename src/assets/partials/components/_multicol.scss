@@ -1,0 +1,18 @@
+/* ============================================================
+Two column elements
+============================================================== */
+
+.two-column {
+  --col-width-left: 35%;
+  --col-width-right: 1fr;
+  display: grid;
+  gap: 4rem;
+  
+  @media (min-width: 1380px) {
+    grid-template-columns: var(--col-width-left) var(--col-width-right);
+  }
+
+  // &__one {}
+  // &__two {}
+}
+

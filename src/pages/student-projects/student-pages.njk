@@ -19,19 +19,36 @@ eleventyNavigation:
 <h1>{{ student.title }}</h1>
 </div>
 
-<hr class="color-accent breakout">
-
 {% if student.aboutGame %}
   <h2>About the game</h2>
   {% for item in student.aboutGame %}
-  <p>{{item}}</p>
+  <p>{{item | safe}}</p>
   {% endfor %}
 {% endif %}
+
+
+<div class="two-column breakout">
+  <div class="two-column__one">
+
+    {% if student.aboutGame %}
+      <h2>About the game</h2>
+      {% for item in student.aboutGame %}
+      <p>{{item | safe}}</p>
+      {% endfor %}
+    {% endif %}
+
+  </div>
+  <div class="two-column__two">
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+  </div>
+</div>
 
 {% if student.story %}
   <h2>Story</h2>
   {% for item in student.story %}
-  <p>{{item}}</p>
+  <p>{{item | safe}}</p>
   {% endfor %}
 {% endif %}
 
@@ -75,13 +92,13 @@ eleventyNavigation:
         </div>
         <div class="two-column__two flow">
           {% for part in item.description %}
-          <p>{{part}}</p>
+          <p>{{part | safe }}</p>
           {% endfor %}
 
           {% if item.list %}
           <ul class="">
             {% for part in item.list %}
-            <li>{{part}}</li>
+            <li>{{part | safe}}</li>
             {% endfor %}
           </ul>
           {% endif%}

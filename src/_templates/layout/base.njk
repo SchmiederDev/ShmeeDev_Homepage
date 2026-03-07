@@ -10,8 +10,6 @@
     <link rel="preload" href="/assets/fonts/rubik-spray-paint-v1-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/barlow-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
-    <link rel="canonical" href="{{ site.url + page.url }}"/>
-
     {% if hidePage %}
       <meta name="robots" content="{{ hidePage }}"/>
     {% else %}
@@ -35,6 +33,7 @@
   </head>
 
   <body>
+
     <a href="#main-content" class="skiplink button visuallyhidden">Skip to main content</a>
     {% include "../includes/header.njk" %}
     <main id="main-content" class="content-grid flow">
