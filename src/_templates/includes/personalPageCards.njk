@@ -1,8 +1,9 @@
 
 {% set currentUrl = page.url %}
 
-<ul class="project-teaser--twothird student breakout">
-    {% for page in student %}
+<ul class="project-teaser--halves personal breakout">
+    {% for page in collections.personal %}
+
     <li>
       <div class="card">
         {# too many position absolutes, hacky hidden extra link #}
@@ -14,7 +15,7 @@
         {% endif %}
         <div class="card__content">
           <a href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__link text-accent-bold">
-            {{ page.title }}
+            {{ page.data.title }}
           </a>
         </div>
       </div>
