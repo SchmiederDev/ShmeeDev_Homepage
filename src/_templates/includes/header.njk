@@ -5,8 +5,14 @@
       <span class="home-link__byline">Game & Level Designer</span>
     </div>
     <nav class="main-nav" aria-label="Main">
+      <button class="main-nav__mobile-toggle" aria-expanded="false">
+        <span class="visuallyhidden">Menu</span>
+        {% include "../icons/pacpunk-controller-only.njk" %}  
+      </button>
+      <div class="main-nav__wrapper">
       {% include "./pageList.njk" %}
       <a href="/" class="color-accent text-accent-bold resume-link__link">Download resume</a>
+      </div>
     </nav>
   </div>
 </header>
