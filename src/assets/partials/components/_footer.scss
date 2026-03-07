@@ -2,4 +2,43 @@
 
 .page-footer {
   background-image: linear-gradient(to top, var(--color-gray), rgba(255, 255, 255, 0.15));
+  padding-block: $gap-4;
+}
+
+
+.footer__icon {
+  margin-top: -15px;
+  svg {
+    width: 100px;
+    height: auto;
+  }
+}
+
+.footer__content {
+  margin-top: 2.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: center;
+
+  &__link {
+    display: grid;
+    place-items: center;
+    padding: 0.25rem;
+
+    &:hover,
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+
+    svg {
+      width: 40px;
+      height: auto;
+      fill: white;
+    }
+  }
 }

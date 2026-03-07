@@ -3,6 +3,7 @@
 .page-header {
   // place above hero
   z-index: 1;
+  background-image: linear-gradient(to bottom, var(--color-black), transparent);
 }
 
 // place hero below header

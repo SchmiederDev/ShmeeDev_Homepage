@@ -1,7 +1,21 @@
 <footer class="page-footer section--gray">
   <div class="content-grid">
     <h2>Let's talk!</h2>
-    <p><a href="#0" target="_blank" rel="noopener noreferrer" class="text-accent-regular">LinkedIn</a></p>
-    <p><a href="#0" target="_blank" rel="noopener noreferrer" class="text-accent-regular">Email</a></p>
+    <div class="footer__content contact">
+      <div class="footer__icon">
+        {% include "../icons/pacpunk-with-controller.njk" %}  
+      </div>
+      <a href="#0" target="_blank" rel="noopener noreferrer" class="contact__link text-accent-regular">
+      <span class="visuallyhidden">Linkedin</span>
+      {% include "../icons/linkedin.njk" %}  
+      
+      </a>
+      <a href="#0" target="_blank" rel="noopener noreferrer" class="contact__link text-accent-regular">
+      {% include "../icons/email.njk" %}
+      <span class="visuallyhidden">Email</span>
+      </a>
+      <a href="/" class="color-accent text-accent-bold resume-link__link">Download resume</a>
+    </div>
+
   </div>
 </footer>
