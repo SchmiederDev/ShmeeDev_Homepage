@@ -12,7 +12,7 @@ export const imageShortcode = (eleventyConfig) => {
 
     // console.log(metadata); // eslint-disable-line
 
-    let data = metadata.png[0];
+    let data = metadata.png[1];
     let webp0 = metadata.webp[0]
     let webp1 = metadata.webp[1]
     let webp2 = metadata.webp[2]
@@ -68,7 +68,6 @@ export const imageShortcode = (eleventyConfig) => {
     let webp1 = metadata.webp[1]
     let className = customClass ? customClass : 'img';
     
-    console.log(metadata); // eslint-disable-line
     if (webp1) {
       let srcsetAttr = `${webp0.srcset}, ${webp1.srcset}`
       let sizesAttr = `(max-width: ${webp0.width + 32}px)${webp0.width}px, ${webp1.width}px`

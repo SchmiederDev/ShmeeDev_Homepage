@@ -2,12 +2,17 @@
   {
     "title": "Office Rush '95",
     "heroImage": {
-      "src": "src/pages/student-projects/images-office-rush/02_08_IMG_DOC_Office_Rush_Level_Final_Stage.png",
+      "src": "src/pages/student-projects/images-office-rush/00_IMG_Hero_Banner_Office_Rush.png",
       "alt": ""
     },
     "aboutGame": [
       "Office Rush ‘95 is a local multi-player office simulation in which the two players compete for the title of “Employee of the Month”. Players have to complete as many office task assignments as possible to win. To get the job done players get to play funny mini games which simulate and mock the mundanity of certain kinds of office tasks. Players are not only tested for their skill during the mini games they are also equipped with means of sabotage to impede the progress of the other player. They can lock doors for the other player or push each other into an onerous, decelerating conversation with co-workers or superiors."
     ],
+    "onepager": {
+      "title": "One-Page Game Design Document",
+      "src": "src/pages/student-projects/images-office-rush/00_IMG_DOC_OfficeRush_OnePageDD_Updated.png",
+      "alt": ""
+    },
     "responsibilities": [
       {
         "role": "Lead Game Designer",
@@ -90,7 +95,7 @@
       }
     ],
     "video": {
-      "type": "Gameplay",
+      "type": "Gameplay Video",
       "videoId": "uVvrHuJCjnw",
       "description": "The character runs throught the first dungeon and gathers three items."
     },

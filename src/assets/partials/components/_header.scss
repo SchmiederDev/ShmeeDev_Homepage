@@ -1,14 +1,16 @@
 @use "../sass-vars" as *;
 
 .page-header {
-  // place above hero
-  z-index: 1;
+  // place above hero and teasercards
+  z-index: 2;
   background-image: linear-gradient(to bottom, var(--color-black), transparent);
+  padding-top: $gap-2;
+  padding-bottom: $gap-4;
 }
 
 // place hero below header
 .hero {
-  --header-height: -137px;
+  --header-height: -200px;
   margin-top: var(--header-height);
 }
 

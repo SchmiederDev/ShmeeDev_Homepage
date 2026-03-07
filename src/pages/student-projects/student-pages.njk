@@ -16,22 +16,42 @@ eleventyNavigation:
 {% if student.heroImage.src %}
 {% heroimage student.heroImage.src, student.heroImage.alt, "full-width hero__img" %}
 {% endif %}
-<h1>{{ student.title }}</h1>
+  <div class="hero__content">
+    <h1>{{ student.title }}</h1>
+  </div>
 </div>
 
+
+
+{% if student.video.videoId %}
+  <h2>{{student.video.type}}</h2>
+  <iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/{{student.video.videoId}}" title="{{student.video.description}}" frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% endif %}
+
+
 {% if student.aboutGame %}
-  <h2>About the game</h2>
+  <h2>About the Game</h2>
   {% for item in student.aboutGame %}
   <p>{{item | safe}}</p>
   {% endfor %}
 {% endif %}
 
 
+{% if student.onepager.src %}
+<div class="onepager breakout">
+<h2>{{ student.onepager.title }}</h2>
+{% image student.onepager.src, student.onepager.alt, "onepager__img" %}
+</div>
+{% endif %}
+
+
+
+{# 
 <div class="two-column breakout">
   <div class="two-column__one">
 
     {% if student.aboutGame %}
-      <h2>About the game</h2>
+      <h2>About the Game</h2>
       {% for item in student.aboutGame %}
       <p>{{item | safe}}</p>
       {% endfor %}
@@ -43,7 +63,7 @@ eleventyNavigation:
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p>
   </div>
-</div>
+</div> #}
 
 {% if student.story %}
   <h2>Story</h2>
@@ -51,13 +71,6 @@ eleventyNavigation:
   <p>{{item | safe}}</p>
   {% endfor %}
 {% endif %}
-
-
-{% if student.video.videoId %}
-  <h2>{{student.video.type}}</h2>
-  <iframe width="600" height="338" src="https://www.youtube-nocookie.com/embed/{{student.video.videoId}}" title="{{student.video.description}}" frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-{% endif %}
-
 
 {% if student.responsibilities %}
   <h2>Responsibilities</h2>
@@ -113,7 +126,7 @@ eleventyNavigation:
 
 {% if student.gallery[0].src %}
   <section id="splide-gallery" class="splide breakout flow" aria-labelledby="carousel-heading">
-    <h2 id="carousel-heading">Project images</h2>
+    <h2 id="carousel-heading" class="visuallyhidden">Project images</h2>
 
     <div class="splide__track">
       <ul class="splide__list">

@@ -35,3 +35,22 @@ h4,
 .h4 {
   font-size: var(--font-size-1);
 }
+
+.prose {
+  :is(ul, ol) {
+    margin-left: 1.25rem;
+  }
+  :is(ul ul, ol ol) {
+    margin-left: 2rem;
+  }
+  
+  & > ul > li::marker {
+    content: "\002B   ";
+    font-size: 1.1em;
+  }
+  & > ul ul > li::marker {
+    content: "\26AC   ";
+    font-size: 1.1em;
+  }
+
+}

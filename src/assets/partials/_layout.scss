@@ -50,7 +50,7 @@ breakout: 90.5rem // 1448px
 */
 .content-grid {
   --padding-inline: 1rem;
-  --content-max-width: 60ch;
+  --content-max-width: 80ch;
   --breakout-max-width: 160ch;
   --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)));
 
@@ -97,10 +97,6 @@ footer {
   a:visited {
     --color-link: var(--color-accent);
   }
-}
-
-header {
-  padding-block: $gap-1;
 }
 
 hr {

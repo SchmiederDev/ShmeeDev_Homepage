@@ -3,11 +3,17 @@
 .hero {
   position: relative;
 
-  h1 {
+  &__content {
     position: absolute;
     display: grid;
     align-items: center;
     height: 100%;
+  }
+
+  h1 {
+    padding: 4rem 2rem;
+    // background-color:rgba(0,0,0, 0.8);
+    background-image: radial-gradient(#000,transparent);
   }
   &__img {
     width: 100%;
