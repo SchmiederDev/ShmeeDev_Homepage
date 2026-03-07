@@ -30,6 +30,10 @@ body {
   padding-bottom: var(--font-size-4);
 }
 
+.content--home {
+  padding-block: var(--font-size-4);
+}
+
 .container {
   padding-inline: $gap-3;
   padding-block: $gap-5;
@@ -80,20 +84,6 @@ breakout: 90.5rem // 1448px
   display: grid;
   grid-template-columns: inherit;
 }
-
-/* ============================================================
-Two column elements
-============================================================== */
-
-.two-column {
-  display: grid;
-  grid-template-columns: 25% 1fr;
-  gap: 4rem;
-
-  // &__one {}
-  // &__two {}
-}
-
 
 /* ============================================================
 Header & Footer

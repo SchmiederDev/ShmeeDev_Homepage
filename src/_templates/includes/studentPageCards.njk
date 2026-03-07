@@ -4,9 +4,20 @@
 <ul class="project-teaser student breakout">
     {% for page in student %}
     <li>
-        <a href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="project-teaser__link text-accent-bold">
+      <div class="card">
+        {# too many position absolutes, hacky hidden extra link #}
+        <a aria-hidden="true" tabindex="-1" href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__hack"></a>
+        {% if page.heroImage.src %}
+        <div class="card__img-wrapper">
+          {% cardthumbnail page.heroImage.src, page.heroImage.alt, "card__img" %}
+        </div>
+        {% endif %}
+        <div class="card__content">
+          <a href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__link text-accent-bold">
             {{ page.title }}
-        </a>
+          </a>
+        </div>
+      </div>
     </li>
     {% endfor %}
 </ul>

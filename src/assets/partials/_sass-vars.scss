@@ -117,6 +117,30 @@ Mixins: general
     }
 }
 
+
+/**
+ * Mixin for making the whole teaser area clickable
+ * e.g. used on Teaser cards
+ *
+ * NOTE: HTML requires a single link (a tag) only
+ */
+ @mixin clickable-card() {
+    position: relative;
+
+    a {
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+
 /* ============================================================
 Mixins: focus/hover
 ============================================================== */

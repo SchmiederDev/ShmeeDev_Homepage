@@ -2,23 +2,78 @@
 
 .project-teaser {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 200px));
-  gap: 1rem;
+  gap: 2rem;
+  
+  @media (min-width: 1220px) {
+    grid-template-columns: 1fr min(600px, 40vw);
+
+    & > li:first-child {
+      grid-row: 1/3;
+      .card__content {
+        padding: var(--font-size-4);
+      }
+    }
+  }
+
+}
+
+
+.card {
+  position: relative;
+  height: 100%;
+  border: 2px solid var(--color-accent);
+
+  &__img-wrapper {
+    height: 100%;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--font-size-2);
+    background-color: rgba(0,0,0,0.8);
+  }
 
   &__link {
     @include hover-slide-focus;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 3/2;
-    padding: 1rem;
-    border-radius: 20px;
+    font-size: var(--font-size-4);
     text-decoration: none;
-    // nneds a hack, see https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-image#examples
-    border: 4px solid transparent;
-    background-image:
-      linear-gradient(var(--color-gray), var(--color-gray)), linear-gradient(35deg, var(--color-accent), var(--color-accent));
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    @media (max-width: 414px) {
+      font-size: var(--font-size-2);
+    }
+
+    }
+
+  &__hack {
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    &:hover {
+        & ~ .card__content .card__link::after {
+            width: 100%;
+            opacity: 0.9;
+        }
+    }
   }
 }
+
+
+// nneds a hack, see https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-image#examples
+// border: 4px solid transparent;
+// background-image:
+//   linear-gradient(var(--color-gray), var(--color-gray)), linear-gradient(35deg, var(--color-accent), var(--color-accent));
+// background-origin: border-box;
+// background-clip: padding-box, border-box;

@@ -3,11 +3,6 @@
 .page-header {
   // place above hero
   z-index: 1;
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-gray),
-    rgba(32, 32, 32, 0.5)
-  );
 }
 
 // place hero below header
@@ -76,7 +71,7 @@
 /*
 css for main nav desktop
 */
-@media (max-width: 1379px) {
+@media (max-width: 1399px) {
   .main-nav__mobile-toggle {display: block;}
   .main-nav__wrapper {display: none;}
   .main-nav__mobile-toggle[aria-expanded=true] ~ .main-nav__wrapper {display: flex;}
@@ -113,7 +108,7 @@ css for main nav desktop
   }
 }
 
-@media (min-width: 1380px) {
+@media (min-width: 1400px) {
   .main-nav__mobile-toggle {display: none;}
   button.main-nav__link[aria-expanded=false] {
     & + .main-nav__sub-list {
@@ -133,7 +128,7 @@ css for main nav desktop
       position: absolute;
       top: 100%;
       left: 0;
-      z-index: 1;
+      z-index: 12;
       display: flex;
       flex-direction: column;
       gap: 16px;
