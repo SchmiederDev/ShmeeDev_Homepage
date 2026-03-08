@@ -2,18 +2,33 @@
 
 .hero {
   position: relative;
+  @media (max-width: $breakpoint-max-home-link) {
+    padding-bottom: 10rem;
+  }
 
   &__content {
     position: absolute;
     display: grid;
     align-items: center;
-    height: 100%;
+
+    @media (max-width: $breakpoint-max-home-link) {
+      bottom: 0;
+    }
+    @media (min-width: $breakpoint-min-home-link) {
+      height: 100%;
+
+    }
   }
 
   h1 {
-    padding: 4rem 2rem;
-    // background-color:rgba(0,0,0, 0.8);
+    z-index: 1;
     background-image: radial-gradient(#000,transparent);
+    @media (max-width: $breakpoint-max-home-link) {
+      padding: 2rem 1rem;
+    }
+    @media (min-width: $breakpoint-min-home-link) {
+      padding: 4rem 2rem;
+    }
   }
   &__img {
     width: 100%;

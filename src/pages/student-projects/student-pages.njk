@@ -38,32 +38,11 @@ eleventyNavigation:
 
 
 {% if student.onepager.src %}
-<div class="onepager breakout">
+<div class="onepager breakout flow">
 <h2>{{ student.onepager.title }}</h2>
 {% image student.onepager.src, student.onepager.alt, "onepager__img" %}
 </div>
 {% endif %}
-
-
-
-{# 
-<div class="two-column breakout">
-  <div class="two-column__one">
-
-    {% if student.aboutGame %}
-      <h2>About the Game</h2>
-      {% for item in student.aboutGame %}
-      <p>{{item | safe}}</p>
-      {% endfor %}
-    {% endif %}
-
-  </div>
-  <div class="two-column__two">
-    <p>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
-  </div>
-</div> #}
 
 {% if student.story %}
   <h2>Story</h2>
@@ -75,7 +54,7 @@ eleventyNavigation:
 {% if student.responsibilities %}
   <h2>Responsibilities</h2>
 
-  <div class="breakout flow skills">
+  <div class="breakout flow flow-80 skills">
     {% for item in student.responsibilities %}
       <div class="two-column{% if loop.index % 2 == 0 %} two-column--swapped{% endif %}">
 
@@ -127,7 +106,7 @@ eleventyNavigation:
 
 {% if student.gallery[0].src %}
   <section id="splide-gallery" class="splide breakout flow" aria-labelledby="carousel-heading">
-    <h2 id="carousel-heading" class="visuallyhidden">Project images</h2>
+    <h2 id="carousel-heading" class="visuallyhidden">Project Images</h2>
 
     <div class="splide__track">
       <ul class="splide__list">

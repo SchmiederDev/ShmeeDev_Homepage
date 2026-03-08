@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:math";
 
 /* ============================================================
 SASS variables
@@ -76,6 +78,72 @@ $breakpoint-max-xxl: pxToEm(1690 - 1);
 $breakpoint-max-hd: pxToEm(1920 - 1);
 $breakpoint-max-header-desktop: pxToEm(1400 - 1);
 $breakpoint-max-home-link: pxToEm(780 - 1);
+
+/* ============================================================
+Functions
+============================================================== */
+@function pxToEm($targetPx, $basePx: 16) {
+    @return math.div($targetPx, $basePx) * 1em;
+}
+
+@function pxToRem($targetPx, $basePx:  16) {
+  @if (math.is-unitless($targetPx)) {
+      $targetPx: $targetPx * 1px;
+  }
+
+  @if (math.is-unitless($basePx)) {
+      $basePx: $basePx * 1px;
+  }
+
+  @return math.div($targetPx, $basePx) * 1rem;
+}
+
+/*
+Mixins for creating css clamp() function
+
+clamped(
+    $min-px: 16px, // smalles size, below $min-bp
+    $max-px: 19.2px, // largest size, above $max-bp
+    $min-bp: 414px,
+    $max-bp: 1480px
+)
+*/
+$media-breakpoints: (
+    mobile: 414px,
+    desktop: 1440px,
+    // ...other values can go in here
+);
+
+$default-min-bp: map.get($media-breakpoints, "mobile");
+$default-max-bp: map.get($media-breakpoints, "desktop");
+
+@function rnd($number, $places: 0) {
+    $n: 1;
+    @if $places > 0 {
+        @for $i from 1 through $places {
+            $n: $n * 10;
+        }
+    }
+    @return math.div(math.round($number * $n), $n);
+}
+
+@function clamped($min-px: 16px, $max-px: 19.2px, $min-bp: $default-min-bp, $max-bp: $default-max-bp) {
+    $slope: math.div($max-px - $min-px, $max-bp - $min-bp);
+    $slope-vw: rnd($slope * 100, 2);
+    $intercept-rems: rnd(pxToRem($min-px - $slope * $min-bp), 2);
+    $min-rems: rnd(pxToRem($min-px), 2);
+    $max-rems: rnd(pxToRem($max-px), 2);
+    @return clamp(#{$min-rems}, #{$slope-vw}vw + #{$intercept-rems}, #{$max-rems});
+}
+
+@function clampedEm($min-px: 16px, $max-px: 19.2px, $min-bp: $default-min-bp, $max-bp: $default-max-bp) {
+    $slope: math.div($max-px - $min-px, $max-bp - $min-bp);
+    $slope-vw: rnd($slope * 100, 2);
+    $intercept-rems: rnd(pxToEm($min-px - $slope * $min-bp), 2);
+    $min-rems: rnd(pxToEm($min-px), 2);
+    $max-rems: rnd(pxToEm($max-px), 2);
+    @return clamp(#{$min-rems}, #{$slope-vw}vw + #{$intercept-rems}, #{$max-rems});
+}
 
 
 /* ============================================================

@@ -19,7 +19,6 @@ body {
 }
 
 html {
-    overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
@@ -103,7 +102,7 @@ em {
 img {
     display: block;
     max-width: 100%;
-    outline: 0;
+    height: auto;
 }
 
 svg {

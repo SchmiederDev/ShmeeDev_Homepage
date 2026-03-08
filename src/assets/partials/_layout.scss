@@ -8,8 +8,19 @@ Page Layouts
   margin-top: var(--flow-space);
 }
 
-.flow-step-4 {
-  --flow-space: var(--font-size-4);
+.flow-80>*+* {
+  --flow-space: var(--spacing--section-80);
+}
+.flow-120>*+* {
+  --flow-space: var(--spacing--section-120);
+}
+
+.flow.prose>*+* {
+  --flow-space: 1em;
+}
+
+.flow :where(h2, h3, h4) {
+  --flow-space: 2em;
 }
 
 [class*="section--"] {
@@ -103,3 +114,11 @@ hr {
   height: 4px;
   background-color: currentColor;
 }
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+// * {outline: 1px solid yellow;}
