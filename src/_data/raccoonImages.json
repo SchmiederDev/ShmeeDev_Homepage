@@ -5,7 +5,8 @@
   },
   "onepagerdoc": {
     "src": "src/pages/personal-projects/trash-and-stash/images/00_IMG_ABOUT_Trash_and_Stash_1Page_GDD.png",
-    "alt": ""
+    "alt": "",
+    "lightbox": "src/pages/personal-projects/trash-and-stash/images/00_IMG_ABOUT_Trash_and_Stash_1Page_GDD.png"
   },
   "research": [
     {

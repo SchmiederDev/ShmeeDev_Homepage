@@ -34,7 +34,17 @@ eleventyNavigation:
   </p>
 
   <h2>One Page Design Document</h2>
-  {% heroimage raccoonImages.onepagerdoc.src, "" %}
+  <div class="lightbox">
+    <dialog class="lightbox-dialog">
+      <button class="lightbox-button-close" autofocus aria-label="Close modal">
+        {% include "icons/plain-cross.njk" %}
+      </button>
+      {% heroimage raccoonImages.onepagerdoc.lightbox, "" %}
+    </dialog>
+    <button class="lightbox-button-show" aria-label="Show large image in modal">
+    {% image raccoonImages.onepagerdoc.src, "" %}
+    </button>
+  </div>
 
   <h2>Level Design Process</h2>
 
@@ -182,6 +192,20 @@ eleventyNavigation:
       });
       splide.mount();
     });
+
+  // init lightbox
+  const lightbox = document.querySelectorAll('.lightbox');
+  lightbox.forEach(box => {
+    const dialog = box.querySelector(".lightbox-dialog");
+    const showButton = box.querySelector(".lightbox-button-show");
+    const closeButton = box.querySelector(".lightbox-button-close");
+    showButton.addEventListener("click", () => {
+      dialog.showModal();
+    });
+    closeButton.addEventListener("click", () => {
+      dialog.close();
+    });
+  });
   } );
 </script>
 

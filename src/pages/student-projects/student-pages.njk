@@ -36,12 +36,25 @@ eleventyNavigation:
   {% endfor %}
 {% endif %}
 
-
 {% if student.onepager.src %}
-<div class="onepager breakout flow">
-<h2>{{ student.onepager.title }}</h2>
-{% image student.onepager.src, student.onepager.alt, "onepager__img" %}
-</div>
+  <h2>{{ student.onepager.title }}</h2>
+  <div class="lightbox">
+    <dialog class="lightbox-dialog">
+      <button class="lightbox-button-close" autofocus aria-label="Close modal">
+        {% include "icons/plain-cross.njk" %}
+      </button>
+      {% heroimage student.onepager.src, student.onepager.alt, "onepager__img-modal" %}
+    </dialog>
+    <button class="lightbox-button-show" aria-label="Show large image in modal">
+    {% image student.onepager.src, student.onepager.alt, "onepager__img-button" %}
+    </button>
+  </div>
+
+
+
+
+
+
 {% endif %}
 
 {% if student.story %}
@@ -134,6 +147,19 @@ eleventyNavigation:
       });
       splide.mount();
     });
+  // init lightbox
+  const lightbox = document.querySelectorAll('.lightbox');
+  lightbox.forEach(box => {
+    const dialog = box.querySelector(".lightbox-dialog");
+    const showButton = box.querySelector(".lightbox-button-show");
+    const closeButton = box.querySelector(".lightbox-button-close");
+    showButton.addEventListener("click", () => {
+      dialog.showModal();
+    });
+    closeButton.addEventListener("click", () => {
+      dialog.close();
+    });
+  });
   } );
 </script>
 
