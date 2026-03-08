@@ -1,0 +1,54 @@
+{
+  "heroImage": {
+    "src": "src/pages/personal-projects/trash-and-stash/images/05_06_IMG_DOC_RacoonGame_BlockOut.png",
+    "alt": ""
+  },
+  "onepagerdoc": {
+    "src": "src/pages/personal-projects/trash-and-stash/images/00_IMG_ABOUT_Trash_and_Stash_1Page_GDD.png",
+    "alt": ""
+  },
+  "research": [
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/01_IMG_DOC_RacoonGame_RealWorldLocationResearch.png",
+      "alt": ""
+    }
+  ],
+  "situations": [
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/02_IMG_DOC_RacoonGame_Parti.png",
+      "alt": ""
+    }
+  ],
+  "layout": [
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/03_IMG_DOC_RacoonGame_Layout_SW.png",
+      "alt": ""
+    }
+  ],
+  "blockout": [
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/05_01_IMG_DOC_RacoonGame_BlockOut.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/05_02_IMG_DOC_RacoonGame_BlockOut.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/05_03_IMG_DOC_RacoonGame_BlockOut.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/05_04_IMG_DOC_RacoonGame_BlockOut.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/05_05_IMG_DOC_RacoonGame_BlockOut.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/trash-and-stash/images/05_06_IMG_DOC_RacoonGame_BlockOut.png",
+      "alt": ""
+    }
+  ]
+}
