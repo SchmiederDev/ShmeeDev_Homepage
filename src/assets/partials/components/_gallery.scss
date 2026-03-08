@@ -1,0 +1,36 @@
+@use "./custom-splidejs";
+
+// overrides
+.splide {
+  --splide-accent: var(--color-accent);
+  --splide-gray-dark: var(--color-copy-bg);
+  // set space for navigation
+  padding-bottom: 4rem;
+}
+
+/* Add numbers to pagination buttons by CSS */
+.splide__pagination {
+  counter-reset: pagination-num;
+  padding: 0.25rem 1rem;
+  overflow: auto;
+  @media (max-width: 500px) {
+    bottom: 0;
+    justify-content: flex-start;
+  }
+}
+
+.splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter( pagination-num );
+}
+
+.splide__pagination__page.is-active {
+  outline: 1px solid currentColor;
+}
+
+// center img inside li
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+}

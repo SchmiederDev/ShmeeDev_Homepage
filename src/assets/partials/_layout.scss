@@ -1,0 +1,124 @@
+@use "./sass-vars" as *;
+
+/* ============================================================
+Page Layouts
+============================================================== */
+
+.flow>*+* {
+  margin-top: var(--flow-space);
+}
+
+.flow-80>*+* {
+  --flow-space: var(--spacing--section-80);
+}
+.flow-120>*+* {
+  --flow-space: var(--spacing--section-120);
+}
+
+.flow.prose>*+* {
+  --flow-space: 1em;
+}
+
+.flow :where(h2, h3, h4) {
+  --flow-space: 2em;
+}
+
+[class*="section--"] {
+  background-color: var(--color-section-bg);
+  color: var(--color-section-color);
+}
+
+.section--gray {
+  --color-section-bg: var(--color-gray);
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+#main-content {
+  padding-bottom: var(--font-size-4);
+}
+
+.content--home {
+  padding-block: var(--font-size-4);
+}
+
+.container {
+  padding-inline: $gap-3;
+  padding-block: $gap-5;
+
+  @include respondMax($breakpoint-max-xs) {
+    padding: $gap-3 $gap-2;
+  }
+}
+
+/*
+$container-sm = content: 60rem; // 960px
+breakout: 90.5rem // 1448px
+
+*/
+.content-grid {
+  --padding-inline: 1rem;
+  --content-max-width: 80ch;
+  --breakout-max-width: 160ch;
+  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)));
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding-inline), 1fr) 
+    /* start breakout and content */
+    [breakout-start] 0 
+    [content-start] min(100% - (var(--padding-inline) * 2),  var(--content-max-width)) [content-end] 
+    minmax(0, var(--breakout-size)) [breakout-end] 
+    minmax(var(--padding-inline), 1fr) [full-width-end];
+  align-content: start;
+}
+
+.content-grid> :not(.breakout, .full-width),
+.full-width> :not(.breakout, .full-width) {
+  grid-column: content;
+}
+
+.content-grid>.breakout,
+.full-width>.breakout {
+  grid-column: breakout;
+}
+
+.content-grid>.full-width,
+.full-width>.full-width {
+  grid-column: full-width;
+}
+
+.content-grid>.full-width {
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+/* ============================================================
+Header & Footer
+============================================================== */
+
+header,
+footer {
+  padding-block: $gap-3;
+
+  a,
+  a:visited {
+    --color-link: var(--color-accent);
+  }
+}
+
+hr {
+  height: 4px;
+  background-color: currentColor;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+// * {outline: 1px solid yellow;}

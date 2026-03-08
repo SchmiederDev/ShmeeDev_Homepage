@@ -1,0 +1,193 @@
+@use "../sass-vars" as *;
+
+.page-header {
+  // place above hero and teasercards
+  z-index: 2;
+  background-image: linear-gradient(to bottom, var(--color-black), transparent);
+  padding-top: var(--font-size-2);
+  padding-bottom: var(--font-size-5);
+}
+
+// place hero below header
+.hero {
+  @media (min-width: $breakpoint-min-header-desktop) {  
+    --header-height: -200px;
+    margin-top: var(--header-height);
+  }
+}
+
+.page-header__content {
+  display: flex;
+  justify-content: space-between;
+  gap: $gap-2;
+}
+
+.home-link {
+  display: grid;
+  grid-template-rows: auto auto;
+  font-weight: 600;
+  
+  @media (min-width: $breakpoint-min-home-link) {
+    grid-template-columns: auto max-content min-content max-content;
+  }
+  
+  &__link {
+    text-decoration: none;
+    font-size: var(--font-size-2);
+    line-height: 1;
+    @media (min-width: $breakpoint-min-home-link) {
+      grid-column: 2/4;
+      grid-row: 1/2;
+    }
+  }
+  &__byline {
+    font-size: var(--font-size-2);
+    line-height: 1;
+    @media (min-width: $breakpoint-min-home-link) {
+      grid-column: 3/5;
+      grid-row: 2/3;
+    }
+  }
+  svg {
+    height: auto;
+    @media (max-width: $breakpoint-max-xs) {
+      width: 3.5rem;
+    }
+    @media (min-width: $breakpoint-min-xs) {
+      width: 6rem;
+      margin-right: 0.5rem;
+    }
+    @media (min-width: $breakpoint-min-home-link) {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+  }
+}
+
+.main-nav {
+  $header-spacing: 30px;
+
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+  }
+  
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  &__link {
+    @include hover-slide-focus;
+    text-decoration: none;
+    font-weight: 600;
+    // font-size: var(--font-size-1);
+  }
+  [aria-current] {
+    color: var(--color-copy-text);
+  }
+}
+
+/*
+css for main nav desktop
+*/
+@media (max-width: $breakpoint-max-header-desktop) {
+  .main-nav__mobile-toggle {display: block;}
+  .main-nav__wrapper {display: none;}
+  .main-nav__mobile-toggle[aria-expanded=true] ~ .main-nav__wrapper {display: flex;}
+  .main-nav__mobile-toggle {
+    svg {
+      width: 80px;
+      height: auto;
+    }
+  }
+  .main-nav {
+    position: relative;
+    &__wrapper {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      z-index: 1;
+      flex-direction: column;
+      width: max-content;
+      padding: $gap-2;
+      background-color: var(--color-copy-bg);
+      background-image: linear-gradient(to top, var(--color-gray), rgba(255, 255, 255, 0.05));
+    }
+    &__list {
+      flex-direction: column;
+
+      &> li {
+        animation: fade-up .5s cubic-bezier(.48,.43,.56,.82) both;
+
+        @for $i from 1 through 3 {
+          &:nth-of-type(#{$i}) {
+            animation-delay: $i * 0.02s;
+          }
+        }
+      }
+
+      .main-nav__sub-list {
+        margin-left: 2ch;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-min-header-desktop) {
+  .main-nav__mobile-toggle {display: none;}
+  button.main-nav__link[aria-expanded=false] {
+    & + .main-nav__sub-list {
+      display: none;
+    }
+  }
+  button.main-nav__link[aria-expanded=true] {
+    & + .main-nav__sub-list {
+      display: flex;
+    }
+  }
+  .main-nav__list {
+    & > li {
+      position: relative;
+    }
+    .main-nav__sub-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 12;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: max-content;
+      padding: $gap-2;
+      background-color: var(--color-copy-bg);
+      background-image: linear-gradient(to top, var(--color-gray), rgba(255, 255, 255, 0.05));
+
+      li {
+        animation: fade-up .5s cubic-bezier(.48,.43,.56,.82) both;
+
+        @for $i from 1 through 3 {
+          &:nth-of-type(#{$i}) {
+            animation-delay: $i * 0.02s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.resume-link__link {
+  text-decoration: none;
+  line-height: 1;
+  border: 2px solid var(--color-accent);
+  padding: 8px 16px;
+  border-radius: $border-radius-025;
+
+  &:hover,
+  &:focus-visible {
+    outline: 1px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+

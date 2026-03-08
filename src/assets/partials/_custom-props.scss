@@ -1,0 +1,35 @@
+@use "./sass-vars" as *;
+
+:root {
+  --font-size--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+  --font-size--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  --font-size-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --font-size-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+  --font-size-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+  --font-size-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+  --font-size-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+  --font-size-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+
+  --spacing--section-24: #{clamped(16px, 24px)};
+  --spacing--section-32: #{clamped(16px, 32px)};
+  --spacing--section-48: #{clamped(30px, 48px)};
+  --spacing--section-60: #{clamped(48px, 60px)};
+  --spacing--section-80: #{clamped(60px, 80px)};
+  --spacing--section-120: #{clamped(80px, 120px)};
+
+  // colors
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #171717;
+  // --color-gray: #323232;
+  --color-pink: #ff0055;
+  --color-pink-dark: #b3003b;
+  --color-pink-light: #ff4d88;
+  // color tokens
+  --color-accent: var(--color-pink);
+  --color-link: var(--color-accent);
+  --color-copy-text: var(--color-white);
+  --color-copy-bg: var(--color-gray);
+  // spacing
+  --flow-space: 1em;
+}

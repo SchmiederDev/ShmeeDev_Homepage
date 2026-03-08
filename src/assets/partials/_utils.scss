@@ -1,0 +1,35 @@
+.visuallyhidden:not(:focus-visible):not(:active) {
+    position: absolute;
+    clip-path: inset(50%);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+}
+
+.text-accent-regular {
+  font-family: "Barlow Regular";
+  font-weight: 400;
+}
+.text-accent-bold {
+  font-family: "Barlow Semibold";
+  font-weight: 600;
+}
+
+.text-copy-regular {
+  font-family: "Barlow Regular";
+  font-weight: 400;
+}
+
+.text-copy-bold {
+  font-family: "Barlow Semibold";
+  font-weight: 600;
+}
+
+.text-heading-bold {
+  font-family: "Arvo Bold", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.color-gray {color: var(--color-gray);}

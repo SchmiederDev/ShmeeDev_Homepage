@@ -1,0 +1,128 @@
+@use "./sass-vars" as *;
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+}
+
+*::-moz-focus-inner {
+    border: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-copy-bg);
+    color: var(--color-copy-text);
+    font-family: "Barlow Regular", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-0);
+    line-height: $line-height-5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+address {
+    font-style: normal;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+button {
+    font: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a,
+a:visited,
+button {
+    color: var(--color-link);
+}
+
+b,
+strong,
+em {
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    pointer-events: none;
+}
+
+/* Remove all scroll and transition settings for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Set smooth scrolling only for people with no preference on reduced-motion */
+/* Animations will all be set within this query, too. */
+@media (prefers-reduced-motion: no-preference) {
+    html:focus-within {
+        scroll-behavior: smooth;
+    }
+}

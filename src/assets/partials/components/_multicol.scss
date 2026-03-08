@@ -1,0 +1,20 @@
+/* ============================================================
+Two column elements
+============================================================== */
+
+.two-column {
+  --col-width-left: 1fr;
+  --col-width-right: 1fr;
+  display: grid;
+  gap: 4rem;
+  
+  @media (min-width: 1380px) {
+    grid-template-columns: var(--col-width-left) var(--col-width-right);
+
+    &--swapped .two-column__two {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+}
+

@@ -1,0 +1,181 @@
+---
+layout: base
+title: Ballad of Balan
+tags: personal
+homepageorder: 2
+permalink: "personal-projects/{{ title | slugify }}/"
+eleventyNavigation:
+  key: personalproject
+  title: {{ page.title }}
+  parent: personal
+  order: 1
+---
+
+<div class="hero full-width">
+
+{% heroimage ballanImages.heroImage.src, "", "full-width hero__img" %}
+
+  <div class="hero__content">
+    <h1>The Ballad of Balan: An Icy Cave</h1>
+  </div>
+</div>
+
+
+  <h2>Gameplay Video</h2>
+  <iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/Q50fsTMOYhs" title="Gameplay Video Ballad of Balan" frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h2>About the Project</h2>
+
+  <div class="prose flow">
+    <p>
+      The "Ballad of Balan" is a personal project of mine where I coded the entire game logic for a Top-Down 3D Singleplayer RPG/ Action Adventure inspired by classical Zelda-titles like "A Link to the Past", "Link’s Awakening" or - though not top-down -"Ocarina of Time".
+    </p>
+    <p>
+      The purpose of this project was to employ this game logic to demonstrate my proficiency with the full range of Level Design fundamentals, starting with:
+    </p>
+
+    <ul>
+      <li>Designing the level in text,</li>
+      <li>Creating parties and layout,</li>
+      <li>Blocking out (gray boxing) the level</li>
+      <li>Iterating upon the block out until it was pleasant to play</li>
+      <li>Finally, lighting and set dressing.</li>
+    </ul>
+
+    <p>The project grew out of a basic Top-Down-RPG set-up we had made in class at School4Games while we were taught to work in Unity and program in C# (which I already was familiar with).</p>
+    <p>It occurred to me, I might as well expand upon the mechanics we had already made: navigation via NavMesh, basic trigger zones for puzzles and an enemy state machine with idle, patrol and chase state (no attack state yet). I decided to complete these elements to a proper playable game and make at least one level with them. </p>
+    <p>The project is meant to be a "Vertical Slice" of what could be an rpg/ action-adventure game with a complete story line and puzzle based "dungeoneering" where the "Icy Cave" would only be the first of many levels.</p>
+
+    <h2>Level Design Process</h2>
+
+    <h3>Designing the Level in Text</h3>
+
+    <p>Before I did anything in the Engine, even before I drew a first layout sketch or gathered specific references I designed the level I was going to make in text. </p>
+    <p>This method is recommended by Steve Lee, a renowned Level Designer with years of experience in AAA productions like Dishonored 2. I find it very fruitful and therefore employ it for all of my projects now. </p>
+    <p>The method of designing a level in text should give you a clear vision of what you are going to make, how and - maybe most importantly - why. What is the purpose of the level? What is its function in the context of the game? Why do you want to create this specific level?</p>
+    <p>After I had answered this question I noted down the Elements at my disposal to create this level, specified Gameplay Beats and finally the Sequence of events occurring in the level. Furthermore, I noted down open questions about the design to keep track of the answers I needed to find during the design process.</p>
+
+    <p>
+      In this I followed the structure suggested by <a href="https://www.youtube.com/watch?v=0FSssDWEFLc" rel="noopener">Steve Lee: How I design a level in text first and why (HL2-Level, Part 1)</a>
+    </p>
+
+    <ol>
+      <li>Goals</li>
+      <li>Elements</li>
+      <li>Gameplay Beats</li>
+      <li>Questions</li>
+      <li>Sequence</li>
+    </ol>
+
+  </div>
+
+  <h3>Layout</h3>
+
+  <p>
+    After I had a clear vision of what I am trying to accomplish I sketched the layout of the level on paper containing all the elements and following the sequence I had defined verbally.
+  </p>
+  <p>
+    Besides defining the spatial structure and dimensions of the level I marked enemy positions, loot/ reward locations, traps, secret passages and alternative paths as well as start and end of the level.
+  </p>
+
+  <div id="splide-skillGallery-layoutsection" class="splide" role="group" aria-label="Image gallery">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in ballanImages.layoutsection %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+
+  <h3>Test Scene (Gym Level)</h3>
+
+  <p>
+    Since I was not only the level designer of this project but also the programmer I established a test scene for testing new functionality implemented as well as balancing character and enemy values. But the scene was also a testing ground for level design. I used this scene to establish the metrics of the game, to check size proportions, spatial dimensions and distances, camera perspective and field of view.
+  </p>
+
+  <div id="splide-skillGallery-testscene" class="splide" role="group" aria-label="Image gallery">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in ballanImages.testscene %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+
+  <h3>Blockout</h3>
+
+  <p>Based on the layout I had drawn on paper I started to block out the level but during the level creation process I switched back and forth between the current state of the block out, the layout and the above mentioned text level design.</p>
+  <p>I tested each new area I had created as a block out thoroughly, observing how the level plays and if the elements I had defined in text and the structure of the layout drawn on paper worked in practice.</p>
+  <p>During the block out creation process and constant testing I could answer some of the questions I had noted down beforehand in the text file but, naturally, new questions arose. I kept track of each of those questions and issues coming up while playtesting.</p>
+  <p>I regularly updated the text level design and adjusted the layout in a new sketch. I iterated upon the block out several times until I had a satisfying result which had the right gamefeel, pacing and flow.</p>
+
+  <div id="splide-skillGallery-blockout" class="splide" role="group" aria-label="Image gallery">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in ballanImages.blockout %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <h3>Set Dressing</h3>
+
+  <p>When I had a block out I was satisfied with, I started to work on the aesthetics of the level and added all the elements which had no gameplay function but were important for the atmosphere I wanted to create.</p>
+  <p>Besides placing atmospheric props/ set pieces around the level I iterated upon the lighting of the level which should be both aesthetically pleasing and a means of guidance for the player, aiding navigation and highlighting crucial elements.</p>
+  <p>Finally, I also used some post processing effects to enhance the magical and mysterious atmosphere I was aiming for.</p>
+
+  <div id="splide-skillGallery-setdressing" class="splide" role="group" aria-label="Image gallery">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in ballanImages.setdressing %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <h2>Setting and Narrative</h2>
+
+  <p>
+    "The Ballad of Balan" is set in a high fantasy world inspired by classical Zelda Titles and games like "Tunic" or "Dungeon’s of Dreadrock". It also recurs to the canonical "Hero’s Journey" narrative structure - though I replaced the classic sword and shield hero Link of the Zelda Series, Link, with a sorcerer novice named "Balan". 
+  </p>
+
+  <p>The world of Balan was once ruled by mighty mages who looked down upon the everyday dealings of the common people from a lofty, gigantic tower in the heart of the continent. </p>
+  <p>One day their craving for power erupted into a fatal feud between the three most renowned mages when the position for a new arch mage was open for the taking. In their attempt to triumph one another with the most impressive magical experiments the mighty dragon "Belch" was conjured. Yet, the beast was not inclined to submit to the commands of its master and wreaked deadly havoc upon the land. Its fiery breath molt the mages tower into a chunk of rock which today rather resembles a mountain than a structure created by humans. To recharge the fire in its lungs "Belch" finally swallowed up the sun itself and enshrouded the world in everlasting darkness and cold. </p>
+  <p>These catastrophic events occurred some hundreds of years ago. Magic largely vanished from the world, Belch hibernates somewhere in the guts of the former mages tower and people hole themselves up in hovels beneath the snow while struggling to survive in a hostile world.</p>
+  <p>The elder of Balans village is capable of casting one of the last spells known to humanity "Embers", the ability to light up material to create light and warmth.</p>
+  <p>Balan, a curious and most intelligent young villager, convinced the elder to grant him access to the elders library and - after weeks of besiegement - also to teach him the "Embers-"spell. In one of the elders' books Balan discovered that the mages tower once had a secret side entrance. </p>
+  <p>At the onset of the events which make up the "Ballad of Balan", Balan in his urge to learn more about the forgotten arcane arts and bolstered with youthful boldness has just set out to find the secret access to the ruins of the mages tower which allegedly is to be found in a frozen cave at the foot of the mountain which once was the mages tower. In this very cave our adventure begins and this is where the level presented here is set.</p>
+
+
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    const galleries = document.querySelectorAll('.splide');
+    galleries.forEach(slide => {
+      let splide = new Splide(`#${slide.id}`, {
+        type  : 'fade',
+        rewind: true,
+        padding: '3rem',
+        gap:'2rem',
+        lazyLoad: 'nearby',
+      });
+      splide.mount();
+    });
+  } );
+</script>
+
+<script defer src="/assets/vendor/splide-4.1.3/dist/js/splide.min.js"></script>

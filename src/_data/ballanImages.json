@@ -1,0 +1,82 @@
+{
+  "heroImage": {
+    "src": "src/pages/personal-projects/ballad-of-balan/images/00_IMG_GP_Ballad_of_Balan_Banner.png",
+    "alt": ""
+  },
+  "layoutsection": [
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/02_01_IMG_DOC_Ballad_of_Balan_Original_Layout_Draft_SW.jpg",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/02_02_IMG_DOC_Ballad_of_Balan_Original_Layout_SW.jpg",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/02_03_IMG_DOC_Ballad_of_Balan_New_Layout_Back_SW.jpg",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/02_04_IMG_DOC_Ballad_of_Balan_New_Layout_Front_SW.jpg",
+      "alt": ""
+    }
+  ],
+  "testscene": [
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/03_IMG_DOC_Ballad_of_Balan_TestScene.png",
+      "alt": ""
+    }
+  ],
+  "blockout": [
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/04_01_IMG_DOC_Ballad_of_Balan_Blockout.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/04_02_IMG_DOC_Ballad_of_Balan_Blockout.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/04_03_IMG_DOC_Ballad_of_Balan_Blockout.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/04_04_IMG_DOC_Ballad_of_Balan_Blockout.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/04_05_IMG_DOC_Ballad_of_Balan_Blockout.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/04_06_IMG_DOC_Ballad_of_Balan_Blockout.png",
+      "alt": ""
+    }
+  ],
+  "setdressing": [
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/05_01_IMG_DOC_Ballad_of_Balan_Set_Dressing.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/05_02_IMG_DOC_Ballad_of_Balan_Set_Dressing.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/05_03_IMG_DOC_Ballad_of_Balan_Set_Dressing.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/05_04_IMG_DOC_Ballad_of_Balan_Set_Dressing.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/05_05_IMG_DOC_Ballad_of_Balan_Set_Dressing.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/05_06_IMG_DOC_Ballad_of_Balan_Set_Dressing.png",
+      "alt": ""
+    }
+  ]
+}

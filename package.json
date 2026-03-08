@@ -1,0 +1,28 @@
+{
+  "name": "robert-schmieder-homepage",
+  "version": "1.0.0",
+  "description": "Website of game and level designer Robert Schmieder",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "watch:eleventy": "cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
+    "watch:sass": "sass --watch src/assets:_site/assets",
+    "build": "npm-run-all build:*",
+    "build:eleventy": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy",
+    "build:sass": "sass  --no-source-map --style=compressed src/assets:_site/assets",
+    "start": "npm-run-all build:sass --parallel watch:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katrin-k/ShmeeDev_Homepage.git"
+  },
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "cross-env": "^10.1.0",
+    "npm-run-all2": "^8.0.4",
+    "sass": "^1.97.3"
+  }
+}

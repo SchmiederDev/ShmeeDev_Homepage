@@ -1,0 +1,23 @@
+
+{% set currentUrl = page.url %}
+
+<ul class="project-teaser--quarter student breakout">
+    {% for page in homepageList %}
+    <li>
+      <div class="card">
+        {# too many position absolutes, hacky hidden extra link #}
+        <a aria-hidden="true" tabindex="-1" href="{{ page.url }}" class="card__hack"></a>
+        {% if page.heroImage.src %}
+        <div class="card__img-wrapper">
+          {% cardthumbnail page.heroImage.src, page.heroImage.alt, "card__img" %}
+        </div>
+        {% endif %}
+        <div class="card__content">
+          <a href="/{{ page.url }}" class="card__link text-heading-bold">
+            {{ page.title }}
+          </a>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,19 @@
+{# params: idSection, idHeading, headingText, contentText, linkHref, linkText, imgSrc, imgAlt #}
+{% macro responsibility(params) %}
+<div class="section">
+    <div class="section__text-container">
+        <h3 class="h3">{{ params.headingText }}</h3>
+        <p>{{ params.contentText }}</p>
+        {% if params.linkHref %}
+        <a href="{{ params.linkHref }}" aria-describedby="{{ params.idHeading }}">
+            {{ params.linkText }}
+        </a>
+        {% endif %}
+    </div>
+    {% if params.imgSrc %}
+    <div class="section__img-container">
+      <img src="{{ params.imgSrc }}" alt="{{ params.imgAlt }}" eleventy:formats="webp" >
+    </div>
+    {% endif %}
+</div>
+{% endmacro %}

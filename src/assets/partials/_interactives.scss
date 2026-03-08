@@ -1,0 +1,12 @@
+@use "./sass-vars" as *;
+
+.skiplink {
+  text-decoration: none;
+  background-color:  var(--color-gray);
+}
+
+.skiplink:focus-visible {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}

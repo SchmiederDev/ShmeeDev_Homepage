@@ -1,0 +1,31 @@
+::backdrop {
+  background-color: var(--color-copy-bg);
+  opacity: 0.75;
+}
+
+.lightbox-dialog {
+  background-color: var(--color-copy-bg);
+}
+
+.lightbox-button-show {
+  &:hover,
+  &:focus-visible {
+    outline: 2px solid currentColor;
+  }
+}
+
+
+.lightbox-button-close {
+  display: block;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid currentColor;
+  }
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}

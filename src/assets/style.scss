@@ -1,0 +1,17 @@
+@use "./partials/fonts";
+@use "./partials/custom-props";
+@use "./partials/base";
+@use "./partials/interactives";
+@use "./partials/layout";
+@use "./partials/text";
+@use "./partials/utils";
+@use "./partials/animations";
+
+@use "./partials/components/dialog";
+@use "./partials/components/header";
+@use "./partials/components/hero";
+@use "./partials/components/footer";
+@use "./partials/components/gallery";
+@use "./partials/components/images";
+@use "./partials/components/multicol";
+@use "./partials/components/teaser";
