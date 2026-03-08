@@ -63,7 +63,8 @@ $breakpoint-min-lg: pxToEm(1280);
 $breakpoint-min-xl: pxToEm(1440);
 $breakpoint-min-xxl: pxToEm(1690);
 $breakpoint-min-hd: pxToEm(1920);
-$breakpoint-min-header-desktop: pxToEm(1200);
+$breakpoint-min-header-desktop: pxToEm(1400);
+$breakpoint-min-home-link: pxToEm(780);
 
 $breakpoint-max-xxs: pxToEm(350 - 1);
 $breakpoint-max-xs: pxToEm(550 - 1);
@@ -73,7 +74,9 @@ $breakpoint-max-lg: pxToEm(1280 - 1);
 $breakpoint-max-xl: pxToEm(1440 - 1);
 $breakpoint-max-xxl: pxToEm(1690 - 1);
 $breakpoint-max-hd: pxToEm(1920 - 1);
-$breakpoint-max-header-desktop: pxToEm(1200 - 1);
+$breakpoint-max-header-desktop: pxToEm(1400 - 1);
+$breakpoint-max-home-link: pxToEm(780 - 1);
+
 
 /* ============================================================
 Mixins: general

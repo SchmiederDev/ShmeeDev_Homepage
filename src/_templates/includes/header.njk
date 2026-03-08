@@ -1,13 +1,14 @@
 <header class="page-header content-grid">
   <div class="breakout page-header__content">
     <div class="home-link">
+      {% include "../icons/pacpunk-with-controller.njk" %}
       <a href="/" class="color-accent home-link__link">Robert Schmieder</a>
       <span class="home-link__byline">Game & Level Designer</span>
     </div>
     <nav class="main-nav" aria-label="Main">
       <button class="main-nav__mobile-toggle" aria-expanded="false">
         <span class="visuallyhidden">Menu</span>
-        {% include "../icons/pacpunk-controller-only.njk" %}  
+        {% include "../icons/pacpunk-controller-only.njk" %}
       </button>
       <div class="main-nav__wrapper">
       {% include "./pageList.njk" %}
