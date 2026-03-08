@@ -4,14 +4,19 @@
 .splide {
   --splide-accent: var(--color-accent);
   --splide-gray-dark: var(--color-copy-bg);
-  margin-top: 3rem;
   // set space for navigation
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 /* Add numbers to pagination buttons by CSS */
 .splide__pagination {
   counter-reset: pagination-num;
+  padding: 0.25rem 1rem;
+  overflow: auto;
+  @media (max-width: 500px) {
+    bottom: 0;
+    justify-content: flex-start;
+  }
 }
 
 .splide__pagination__page:before {
