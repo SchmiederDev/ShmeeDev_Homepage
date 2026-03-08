@@ -14,7 +14,7 @@
         </div>
         {% endif %}
         <div class="card__content">
-          <a href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__link text-accent-bold">
+          <a href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__link text-heading-bold">
             {{ page.data.title }}
           </a>
         </div>
