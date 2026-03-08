@@ -77,33 +77,10 @@ eleventyNavigation:
 
   <div class="breakout flow skills">
     {% for item in student.responsibilities %}
+      <div class="two-column{% if loop.index % 2 == 0 %} two-column--swapped{% endif %}">
 
-      <div class="two-column">
-        <div class="two-column__one flow">
+        <div class="two-column__one flow prose">
           <h3>{{item.role}}</h3>
-          {% if item.image %}
-          <div class="skill__img-wrapper">
-            {% image item.image.src, item.image.alt, "skill__img" %}
-          </div>
-          {% endif%}
-
-
-          {% if item.skillGallery[0].src %}
-            <div id="splide-skillGallery-{{ loop.index }}" class="splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  {% for img in item.skillGallery %}
-                  <li class="splide__slide">
-                    {% image img.src, img.alt %}
-                  </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          {% endif %}
-
-        </div>
-        <div class="two-column__two flow">
           {% for part in item.description %}
           <p>{{part | safe }}</p>
           {% endfor %}
@@ -116,6 +93,30 @@ eleventyNavigation:
           </ul>
           {% endif%}
         </div>
+
+
+        <div class="two-column__two flow">
+          {% if item.image %}
+          <div class="skill__img-wrapper">
+            {% image item.image.src, item.image.alt, "skill__img" %}
+          </div>
+          {% endif%}
+
+          {% if item.skillGallery[0].src %}
+            <div id="splide-skillGallery-{{ loop.index }}" class="splide" role="group" aria-label="Image gallery">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  {% for img in item.skillGallery %}
+                  <li class="splide__slide">
+                    {% image img.src, img.alt %}
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+
       </div>
 
     {% endfor %}
