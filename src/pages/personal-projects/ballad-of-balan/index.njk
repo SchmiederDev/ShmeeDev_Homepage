@@ -22,7 +22,7 @@ eleventyNavigation:
 
 
   <h2>Gameplay Video</h2>
-  <iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/Q50fsTMOYhs" title="Gameplay Video Ballad of Balan" frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/STrrGWtTY38" title="Gameplay Video Ballad of Balan" frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   <h2>About the Project</h2>
 
@@ -45,6 +45,19 @@ eleventyNavigation:
     <p>The project grew out of a basic Top-Down-RPG set-up we had made in class at School4Games while we were taught to work in Unity and program in C# (which I already was familiar with).</p>
     <p>It occurred to me, I might as well expand upon the mechanics we had already made: navigation via NavMesh, basic trigger zones for puzzles and an enemy state machine with idle, patrol and chase state (no attack state yet). I decided to complete these elements to a proper playable game and make at least one level with them. </p>
     <p>The project is meant to be a "Vertical Slice" of what could be an rpg/ action-adventure game with a complete story line and puzzle based "dungeoneering" where the "Icy Cave" would only be the first of many levels.</p>
+
+    <h2>One Page Design Document</h2>
+      <div class="lightbox">
+        <dialog class="lightbox-dialog">
+          <button class="lightbox-button-close" autofocus aria-label="Close modal">
+            {% include "icons/plain-cross.njk" %}
+          </button>
+          {% heroimage ballanImages.onepagerdoc.lightbox, "" %}
+      </dialog>
+        <button class="lightbox-button-show" aria-label="Show large image in modal">
+        {% image ballanImages.onepagerdoc.src, "" %}
+      </button>
+  </div>
 
     <h2>Level Design Process</h2>
 
@@ -161,6 +174,20 @@ eleventyNavigation:
   <p>At the onset of the events which make up the "Ballad of Balan", Balan in his urge to learn more about the forgotten arcane arts and bolstered with youthful boldness has just set out to find the secret access to the ruins of the mages tower which allegedly is to be found in a frozen cave at the foot of the mountain which once was the mages tower. In this very cave our adventure begins and this is where the level presented here is set.</p>
 
 
+<div class="breakout flow flow-80">
+  <div id="splide-skillGallery-ballan_gameplay" class="splide" role="group" aria-label="Image gallery">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in ballanImages.gallery %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
 
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
@@ -175,6 +202,20 @@ eleventyNavigation:
       });
       splide.mount();
     });
+
+  // init lightbox
+  const lightbox = document.querySelectorAll('.lightbox');
+  lightbox.forEach(box => {
+    const dialog = box.querySelector(".lightbox-dialog");
+    const showButton = box.querySelector(".lightbox-button-show");
+    const closeButton = box.querySelector(".lightbox-button-close");
+    showButton.addEventListener("click", () => {
+      dialog.showModal();
+    });
+    closeButton.addEventListener("click", () => {
+      dialog.close();
+    });
+  });
   } );
 </script>
 

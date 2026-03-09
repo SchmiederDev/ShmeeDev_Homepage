@@ -3,6 +3,11 @@
     "src": "src/pages/personal-projects/ballad-of-balan/images/00_IMG_GP_Ballad_of_Balan_Banner.png",
     "alt": ""
   },
+  "onepagerdoc": {
+    "src": "src/pages/personal-projects/ballad-of-balan/images/00_IMG_DOC_Ballad_of_Balan_OnePageDesign.png",
+    "alt": "",
+    "lightbox": "src/pages/personal-projects/ballad-of-balan/images/00_IMG_DOC_Ballad_of_Balan_OnePageDesign.png"
+  },
   "layoutsection": [
     {
       "src": "src/pages/personal-projects/ballad-of-balan/images/02_01_IMG_DOC_Ballad_of_Balan_Original_Layout_Draft_SW.jpg",
@@ -76,6 +81,32 @@
     },
     {
       "src": "src/pages/personal-projects/ballad-of-balan/images/05_06_IMG_DOC_Ballad_of_Balan_Set_Dressing.png",
+      "alt": ""
+    }
+  ],
+  "gallery": [
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/01_IMG_GP_Ballad_of_Balan_Level_Start.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/02_IMG_GP_Ballad_of_Balan_Dead_wizard.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/03_IMG_GP_Ballad_of_Balan_Crab.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/04_IMG_GP_Ballad_of_Balan_EnergyOrb.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/05_IMG_GP_Ballad_of_Balan_Color_Puzzle.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/personal-projects/ballad-of-balan/images/06_IMG_GP_Ballad_of_Balan_IceGolems.png",
       "alt": ""
     }
   ]

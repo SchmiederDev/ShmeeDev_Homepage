@@ -1,6 +1,7 @@
 # ignore all png's
 *.gif
 *.ico
+.vs/
 
 # frontend
 node_modules
