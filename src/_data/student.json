@@ -18,6 +18,16 @@
         "role": "Lead Game Designer",
         "description": [
           "As the lead game designer I designed the main mechanics and systems of the game in collaboration with the other two game designers on the project (Lead Level Designer & UI/UX Designer), reviewed and gave constant feedback on their work, and maintained Game Design Wiki made with Confluence. I was also responsible for coordination within the Game Design department as well as inter-department communication."
+        ],
+        "skillGallery": [
+          {
+            "src": "src/pages/student-projects/images-office-rush/Office_Rush_Market_Analysis_Summary.png",
+            "alt": ""
+          },
+          {
+            "src": "src/pages/student-projects/images-office-rush/Office_Rush_Quantic_Foundry_Player_Type.png",
+            "alt": ""
+          }
         ]
       },
       {
