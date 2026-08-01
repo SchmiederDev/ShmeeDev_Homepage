@@ -4,15 +4,37 @@
     "src": "src/pages/student-projects/tomb-diver/images/Tomb_Diver_00_IMG_HeroBanner.png",
     "alt": ""
   },
-  "responsibilities": {
-    "leadGameDesigner": {
-      "skillGallery": [
+  "breakdown":
+  {
+    "src": "src/pages/student-projects/tomb-diver/images/Tomb_Diver_Project_Breakdown_00_Overview.png",
+    "alt": "",
+    "lightbox": "src/pages/student-projects/tomb-diver/images/Tomb_Diver_Project_Breakdown_00_Overview.png"
+  },
+  "creationProcess": {
+    "tombAnalysis": {
+      "analysisGallery": [
         {
-          "src": "src/pages/student-projects/office-rush/images/Office_Rush_Market_Analysis_Summary.png",
+          "src": "src/pages/student-projects/tomb-diver/images/00_TombDiver_Analysis_Underworld_Gate_00.png",
           "alt": ""
         },
         {
-          "src": "src/pages/student-projects/office-rush/images/Office_Rush_Quantic_Foundry_Player_Type.png",
+          "src": "src/pages/student-projects/tomb-diver/images/01_Tomb_Diver_Analysis_Judges_Gaze_FullLayout_Reconstructed_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/02_TombDiver_Analysis_Underworld_Gate_01.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/03_TombDiver_Analysis_Underworld_Gate_02.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/04_TombDiver_Analysis_Underworld_Gate_04.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/05_TombDiver_Analysis_Ancient_Aqueduct_00.png",
           "alt": ""
         }
       ]

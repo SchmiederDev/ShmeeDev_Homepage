@@ -22,153 +22,72 @@ eleventyNavigation:
 </div>
 
 <h2>Gameplay Video</h2>
-<iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/uVvrHuJCjnw" title="The character runs throught the first dungeon and gathers three items." frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/93IJiaCwdYw" title="The character runs throught the first dungeon and gathers three items." frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2>About the Game</h2>
-<p>Office Rush ‘95 is a local multi-player office simulation in which the two players compete for the title of “Employee of the Month”. Players have to complete as many office task assignments as possible to win. To get the job done players get to play funny mini games which simulate and mock the mundanity of certain kinds of office tasks. Players are not only tested for their skill during the mini games they are also equipped with means of sabotage to impede the progress of the other player. They can lock doors for the other player or push each other into an onerous, decelerating conversation with co-workers or superiors.</p>
+<h2>About the Project</h2>
+<p>“Tomb Diver” is a level inspired by the “Challenge Tombs” in the Tomb Raider Survivor Trilogy (Crystal Dynamics/ Eidos-Montréal, 2013-2018) which I created as my final project at School4Games. In accordance with the requirements of the final exam this was an individual piece of work.</p>
+<p>To create an experience similar to the Challenge Tombs in the Survivor Trilogy I first studied and analyzed the characteristics of the level design of the Tombs in all three titles of the series with special regard to the Challenge Tombs in “Shadow of the Tomb Raider” (the last title of the series, 2018).</p>
+<p>The second part of this project was to apply the insights gained from the theoretical analysis to practical level design and make a level which breathes the spirit of the Challenge Tombs.</p>
 
-
-
-<h2>One Page Design Document</h2>
 <div class="lightbox">
   <dialog class="lightbox-dialog">
     <button class="lightbox-button-close" autofocus aria-label="Close modal">
       {% include "icons/plain-cross.njk" %}
     </button>
-    {% heroimage officerushImages.onepager.src, officerushImages.onepager.alt, "onepager__img-modal" %}
+    {% heroimage tombDiverImages.breakdown.src, tombDiverImages.breakdown.alt, "breakdown__img-modal" %}
   </dialog>
   <button class="lightbox-button-show" aria-label="Show large image in modal">
-  {% image officerushImages.onepager.src, officerushImages.onepager.alt, "onepager__img-button" %}
+  {% image tombDiverImages.breakdown.src, tombDiverImages.breakdown.alt, "breakdown__img-button" %}
   </button>
 </div>
 
+<h2>Project Breakdown</h2>
+  <ul>
+    <li><b>The Mission:</b> Make a “Challenge Tomb”-level recreating the player experience in the Tomb Raider Survivor Trilogy based on an analysis of the games</li>
+    <li><b>The Genre:</b> Action Adventure</li>
+    <li><b>Character, Camera, Controls:</b> Single Player, 3rd Person, Keyboard + Mouse or Gamepad</li>
+    <li><b>Platform:</b> PC, Windows</li>
+    <li><b>Tools:</b> Unreal Engine 5.7.1, Unreal Modeling & Landscaping Tools, Blueprints/ Visual Scripting </li>
+    <li><b>Role:</b> Concept, Layout, Blockout, Scripting, Pacing, Lighting, Prop Placement</li>
+    <li><b>Team Size:</b> 1</li>
+  </ul>
 
-<h2>Responsibilities</h2>
-<div class="breakout flow flow-80 skills">
+
+<h2>Level Design and Creation Process</h2>
+<!-- Image on right side -->
   <div class="two-column">
-
     <div class="two-column__one flow prose">
-      <h3>Lead Game Designer</h3>
-      <p>As the lead game designer I designed the main mechanics and systems of the game in collaboration with the other two game designers on the project (Lead Level Designer & UI/UX Designer), reviewed and gave constant feedback on their work, and maintained Game Design Wiki made with Confluence. I was also responsible for coordination within the Game Design department as well as inter-department communication.</p>
-    </div>
-
-    <div class="two-column__two flow">
-
-      <div id="splide-skillGallery-0" class="splide" role="group" aria-label="Image gallery with lead designer activities">
-        <div class="splide__track">
-          <ul class="splide__list">
-            {% for img in officerushImages.responsibilities.leadGameDesigner.skillGallery %}
-            <li class="splide__slide">
-              {% image img.src, img.alt %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div class="two-column two-column--swapped">
-
-    <div class="two-column__one flow prose">
-      <h3>Level Designer</h3>
-      <p>On this project I worked in conjunction with another Level Designer. The Lead Level Designer, Fedir Stepanenko, was responsible for layouting and blocking out the basic structure of the main level as well as establishing the level creation workflow whereas I was for responsible for the spatial arrangement of all of the interactive gameplay elements like mini game stations, visual clues for orientation and elements of sabotage like NPC-“Traps” and pickable keys for locking doors.</p>
-      <p>We communicated and coordinated intensively about the Level Design. We exchanged feedback on each iteration of layout and block out. Finally, together we playtested our map thoroughly, figured out issues and solutions.</p>
-    </div>
-
-    <div class="two-column__two flow">
-
-      <div id="splide-skillGallery-{{ loop.index }}" class="splide" role="group" aria-label="Image gallery">
-        <div class="splide__track">
-          <ul class="splide__list">
-            {% for img in officerushImages.responsibilities.levelDesigner.skillGallery %}
-            <li class="splide__slide">
-              {% image img.src, img.alt %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div class="two-column">
-
-    <div class="two-column__one flow prose">
-      <h3>Quality Assurance</h3>
-      <p>I was responsible for QA during Office Rush's production. I wrote and conducted test cases for multiple scenarios on each detail of the games. I organized playtests with external testers, employed methods of direct observations, interviews and surveys. I protocolled and summarized the results for the team, communicated issues and presented possible solutions.</p>
-    </div>
-
-    <div class="two-column__two flow">
-      <div class="skill__img-wrapper">
-        {% image officerushImages.responsibilities.qualityAssurance.resimage.src, officerushImages.responsibilities.qualityAssurance.resimage.alt, "skill__img" %}
-      </div>
-    </div>
-
-  </div>
-
-
-    <div class="two-column two-column--swapped">
-
-      <div class="two-column__one flow prose">
-        <h3>Marketing</h3>
-        <p>Recording gameplay footage and cutting it, taking screen shots, writing marketing texts and information about the game for our <a href='http://itch.io' rel='noopener'>itch.io page</a> also lay within the realm of my responsibilities as well as advertising the game on social media.</p>
-      </div>
-
-
-      <div class="two-column__two flow">
-        <div class="skill__img-wrapper">
-          {% image officerushImages.responsibilities.marketing.image.src, officerushImages.responsibilities.marketing.image.alt, "skill__img" %}
-        </div>
-      </div>
-
-    </div>
-
-
-    <div class="two-column">
-
-      <div class="two-column__one flow prose">
-        <h3>Scripting</h3>
-
-        <ul class="">
-          <li>Audio: On this project I was also responsible for getting the background music and sound effects into the game. That meant playing the right sound and type of sound from the right place in the existing scripts via Visual Scripting in Unreal.</li>
-          <li>Bug Fixing: When something didn’t work and no engineer was around/ had the capacity to have a look into it I would jump in sometimes to find and fix minor bugs.</li>
-          <li>Adjusting Scripts: On a few occasions when the Game Designers on the project (including me) realized they want to be able to adjust a certain behaviour I would have a look into the scripts, find the right place for setting a value and make it editable in the Unreal editor.</li>
-        </ul>
-      </div>
-
-
-      <div class="two-column__two flow">
-        <div class="skill__img-wrapper">
-          {% image officerushImages.responsibilities.scripting.image.src, officerushImages.responsibilities.scripting.image.alt, "skill__img" %}
-        </div>
-      </div>
-
-    </div>
-
-</div>
-
-
-{% if officerushImages.gallery[0].src %}
-  <section id="splide-gallery" class="splide breakout flow" aria-labelledby="carousel-heading">
-    <h2 id="carousel-heading" class="visuallyhidden">Project Images</h2>
-
-    <div class="splide__track">
-      <ul class="splide__list">
-        {% for item in officerushImages.gallery %}
-        <li class="splide__slide">
-          {% image item.src, item.alt, "gallery__img" %}
-        </li>
-        {% endfor %}
+      <h3>Analyzing the Challenge Tombs</h3>
+      <p>Obviously, I chose to make a “Challenge Tomb” of my own because I loved to play the Challenge Tombs in the Survivor Trilogy. But to to reproduce the experience of the Tombs I first had to answer several questions: </p>
+      <ul>
+        <li>What makes these levels interesting and fun to play?</li>
+        <li>What makes a “Challenge Tomb” a Challenge Tomb in terms of level design?</li>
+        <li>Which incentives are given and which motivations are offered to players to play these side quests?</li>
+        <li>Why are the Challenge Tombs rewarding to play? - Which rewards await players for completing the Tomb?</li>
+        <li>Which kinds of challenges players have to overcome to complete these levels?</li>
+        <li>How are the Challenge Tombs structured in terms of Pacing and Flow?</li>
+        <li>What effect do side-quest-levels have on the general/ overall Pacing and Flow of the games?</li>
       </ul>
+      <p>And finally the final and central question:</p>
+      <ul>
+        <li>How are Challenge Tombs as side-quest-levels integrated into the semi-open-world areas of the series and what is their function and purpose in otherwise linear Action-Adventures?</li>
+      </ul>
+      <p>The results of my study and detailed answers to these questions you can find here:</p>
     </div>
-  </section>
-{% endif %}
-
+    <div class="two-column__two flow">
+      <div id="splide-analysisGallery-0" class="splide" role="group" aria-label="Image gallery with explanatory screenshots analyzing Challenge Tombs in Tomb Raider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.tombAnalysis.analysisGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
 
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
