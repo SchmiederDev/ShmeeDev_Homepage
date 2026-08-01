@@ -39,38 +39,18 @@
         }
       ]
     },
-    "levelDesigner": {
-      "skillGallery": [
+    "metaHuman": {
+      "characterGallery": [
         {
-          "src": "src/pages/student-projects/office-rush/images/02_01_IMG_DOC_Office_Rush_Original_Layout_by_Fedir_Stepanenko.png",
+          "src": "src/pages/student-projects/tomb-diver/images/07_MetaHuman_CaraLoft_00.png",
           "alt": ""
         },
         {
-          "src": "src/pages/student-projects/office-rush/images/02_02_IMG_DOC_OfficeRush_Original_Layout_Stations_by_Robert_Schmieder.png",
+          "src": "src/pages/student-projects/tomb-diver/images/08_Meta_Human_Cara_Loft_Outfit_01.png",
           "alt": ""
         },
         {
-          "src": "src/pages/student-projects/office-rush/images/02_03_IMG_DOC_Office_Rush_Block_Out_15-01-26-Fedir_Stepanenko.png",
-          "alt": ""
-        },
-        {
-          "src": "src/pages/student-projects/office-rush/images/02_04_IMG_DOC_Office_Rush_Block_Out_15-01-26_Marked_Zones_Rober_Schmieder.png",
-          "alt": ""
-        },
-        {
-          "src": "src/pages/student-projects/office-rush/images/02_05_IMG_DOC_OfficeRush_Layout_260126_TimeFromTaskboard.png",
-          "alt": ""
-        },
-        {
-          "src": "src/pages/student-projects/office-rush/images/02_06_IMG_DOC_OfficeRush_Layout_NPCs.png",
-          "alt": ""
-        },
-        {
-          "src": "src/pages/student-projects/office-rush/images/02_07_IMG_DOC_Office_Rush_NPC_Placement_03-02-2026.png",
-          "alt": ""
-        },
-        {
-          "src": "src/pages/student-projects/office-rush/images/02_08_IMG_DOC_Office_Rush_Level_Final_Stage.png",
+          "src": "src/pages/student-projects/tomb-diver/images/09_Meta_Human_Cara_Loft_Outfit_02.png",
           "alt": ""
         }
       ]

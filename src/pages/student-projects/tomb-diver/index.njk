@@ -55,6 +55,7 @@ eleventyNavigation:
 
 <h2>Level Design and Creation Process</h2>
 <!-- Image on right side -->
+<div class="breakout flow flow-80 skills">
   <div class="two-column">
     <div class="two-column__one flow prose">
       <h3>Analyzing the Challenge Tombs</h3>
@@ -86,8 +87,36 @@ eleventyNavigation:
             </ul>
           </div>
         </div>
+      </div>
     </div>
   </div>
+
+<div class="breakout flow flow-80 skills">
+  <div class="two-column two-column--swapped">
+    <div class="two-column__one flow prose">
+      <h3>
+        Meta Human Character
+      </h3>
+      <p>I wanted to create an authentic experience therefore I needed a convincing female action hero. Yet I did not want just to copy Lara Croft therefore I created my own interpretation of an adventurous archaeologist.</p>
+      <p>Since I am not a 3D-Character-Artist I made use of Unreal Meta Humans to create the character for the level.</p>
+      <p>I learned to use Unreal modeling tools to adjust the adventurer outfit I had found on Sketchfab so it would fit my character.</p>
+    </div>
+    <div class="two-column__two flow">
+      <div id="splide-characterGallery-0" class="splide" role="group" aria-label="Image gallery depicting the creation of the main character">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.metaHuman.characterGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
 
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
