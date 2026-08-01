@@ -145,6 +145,34 @@ eleventyNavigation:
     </div>
   </div>
 
+<div class="breakout flow flow-80 skills">
+  <div class="two-column two-column--swapped">
+    <div class="two-column__one flow prose">
+      <h3>
+        Gym Level and Metrics
+      </h3>
+      <p>Before I started to create the actual Challenge Tomb level, “The Great Pyramid”, I first established the metrics of the level, to figure out distances, height levels and size relations.</p>
+      <p>The relation between the character and the largest architectural structure, the pyramid, served as a reference point to establish everything else.</p>
+      <p>I also made a Gym Level to test and fine tune the moveset in relation to level metrics.</p>
+      <p>Here I established the values for gameplay mechanics such as jump height and distance, distance between ledges, the speed with which traps trigger so they are challenging but still possible for the player to avoid etc.</p>
+    </div>
+    <div class="two-column__two flow">
+      <div id="splide-characterGallery-0" class="splide" role="group" aria-label="Image gallery depicting the creation of the main character">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.metaHuman.characterGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
     const galleries = document.querySelectorAll('.splide');

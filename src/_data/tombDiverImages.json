@@ -61,11 +61,17 @@
         "alt": ""
       }
     },
-    "marketing": {
-      "image": {
-        "src": "src/pages/student-projects/office-rush/images/04_IMG_DOC_Itch_Page.png",
-        "alt": ""
-      }
+    "gymLevelMetrics": {
+      "gymGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/11_Tomb_Diver_Gym_Level.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/12_Tomb_Diver_Metrics.png",
+          "alt": ""
+        }
+      ]
     },
     "scripting": {
       "image": {
