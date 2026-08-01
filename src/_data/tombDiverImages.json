@@ -73,11 +73,29 @@
         }
       ]
     },
-    "scripting": {
-      "image": {
-        "src": "src/pages/student-projects/office-rush/images/05_IMG_DOC_Office_Rush_Sound_Scripting.png",
-        "alt": ""
-      }
+    "layout": {
+      "layoutGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/13_Tomb_Diver_Layout_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/14_Tomb_Diver_Layout_01.jpg",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/15_Tomb_Diver_Training_Area_Layout_02.jpg",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/17_Tomb_Diver_Layout_04.jpg",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/18_Tomb_Diver_Layout_06.jpg",
+          "alt": ""
+        }
+      ]
     }
   },
   "gallery": [

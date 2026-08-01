@@ -157,10 +157,10 @@ eleventyNavigation:
       <p>Here I established the values for gameplay mechanics such as jump height and distance, distance between ledges, the speed with which traps trigger so they are challenging but still possible for the player to avoid etc.</p>
     </div>
     <div class="two-column__two flow">
-      <div id="splide-characterGallery-0" class="splide" role="group" aria-label="Image gallery depicting the creation of the main character">
+      <div id="splide-gymLevelGallery-0" class="splide" role="group" aria-label="Image gallery depicting a gym level and size relation between character and a pyramid">
           <div class="splide__track">
             <ul class="splide__list">
-              {% for img in tombDiverImages.creationProcess.metaHuman.characterGallery %}
+              {% for img in tombDiverImages.creationProcess.gymLevelMetrics.gymGallery %}
               <li class="splide__slide">
                 {% image img.src, img.alt %}
               </li>
@@ -172,6 +172,39 @@ eleventyNavigation:
     </div>
   </div>
 </div>
+
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+    <div class="two-column__one flow prose">
+      <h3>Level Layout and Iterations</h3>
+      <p>My analysis of the Challenge Tombs showed that these levels usually consisted of four level sections I also wanted to have in my “Tomb”:</p>
+      <ul>
+        <li>The hidden entrance area located in the semi-open world regions of the Survivor Trilogy. Though “hidden”, these areas were marked with clear denominators like color coded decals and props such as golden masks on poles.</li>
+        <li>Behind the entrance followed an alley-type-like level section, a narrow path either enclosed by walls/ rocks or deadly chasms to the left and right of the path.</li>
+        <li>The actual Challenge Tomb, which I dubbed “Challenge Tomb Proper”, a rectangular or circular “playground” area in which the elements of the central puzzle and the reward/ level goal are located.</li>
+        <li>Finally, the way back, also an alley-/path-like section leading back towards the entrance - usually a short cut running parallel or above the way in which often is only accessible from the end of the level.</li>
+      </ul>
+      <p>Quite early on I had a vision of how the entrance area and the path to Challenge Tomb could look like: Coming from a narrow valley basin the player would enter a canyon through a rock crevice. Players would have to find their way along narrow ridges high above chasms created by a wide river eroding the rock of the canyon.</p>
+      <p>From the canyon players would enter a closed off temple complex containing the Challenge Tomb proper: the central puzzle with the level goal/ reward at the end.</p>
+      <p>Yet, there was a certain tension between the very vertical and winding rough natural surroundings and gameplay within/ around human architecture  - which in the real world is usually built on flat planes.</p>
+      <p>The question of how I could reconcile these two elements was a challenge I had to tackle.</p>
+      <p>Depending on what type of game or level you’re making, realism is of course not premise number 1 in a video game but for an Action Adventure inspired by Tomb Raider the interplay between natural environment and architecture had at least to be convincing.</p>
+      <p>Since not all questions can be answered only in theory I began to block out (gray box) and started a dialogue between the conceptual layouts on paper and the playable level in Engine.</p>
+    </div>
+    <div class="two-column__two flow">
+     <div id="splide-layoutGallery-0" class="splide" role="group" aria-label="Image gallery depicting different stages of the level layout design process with handdrawn layout sketches">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.layout.layoutGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
 
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
