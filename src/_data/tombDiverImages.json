@@ -55,9 +55,9 @@
         }
       ]
     },
-    "qualityAssurance": {
-      "resimage": {
-        "src": "src/pages/student-projects/office-rush/images/03_IMG_DOC_OfficeRush_QA_Testcases_Sort.png",
+    "visualScripting": {
+      "characterControllerImg": {
+        "src": "src/pages/student-projects/tomb-diver/images/10_Tomb_Diver_Visual_Scripting.png",
         "alt": ""
       }
     },

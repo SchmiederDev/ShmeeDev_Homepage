@@ -118,6 +118,33 @@ eleventyNavigation:
   </div>
 </div>
 
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+    <div class="two-column__one flow prose">
+      <h3>Unreal Visual Scripting & Character Controller</h3>
+      <p>Unreal comes with amazing free templates but none of them had the specific moveset of Lara in the Tomb Raider Trilogy so I started to expand the 3rd-Person Unreal character blueprint and  in a way that it would serve my purpose.</p>
+      <p>Therefore I coded wall and ledge climbing functions with Visual Scripting, implemented mantling, crouching and sliding moves.</p>
+      <p>I made my own functional checkpoint, level trigger and interactable object scripts (levers, switches, sliding doors, movable objects, trap doors and spear traps etc.). </p>
+      <p>Proud as I was how fast I had accomplished to produce e. g. a working ledge climbing system I realized during the first weeks of the project that balancing and fine tuning my own Adventure Game System would either take its toll on the quality of the level design or remain in an unpolished state.
+        Therefore I made the hard decision to abandon the character controller I had put a lot of effort in and use a readymade Adventure Game System created by a professional programmer (<a href="https://www.patreon.com/JakubW/posts/ue-5-7-v1-8-0-no-153909783">Jakub W</a>) to have more time to invest in improving and iterating upon the level design.</p>
+      <p>Nonetheless, the process of making my own Adventure Game System was not in vain. I learned a lot about Visual Scripting and Unreal Blueprints, the Animation System, Collision Layers and much more. I now have a much better and deeper understanding of many components of the Unreal Engine and how they work together.</p>
+    </div>
+    <div class="two-column__two flow">
+     <div class="lightbox">
+      <dialog class="lightbox-dialog">
+        <button class="lightbox-button-close" autofocus aria-label="Close modal">
+          {% include "icons/plain-cross.njk" %}
+        </button>
+        {% heroimage tombDiverImages.visualScripting.characterControllerImg.src, tombDiverImages.visualScripting.characterControllerImg.alt, "onepager__img-modal" %}
+      </dialog>
+          <button class="lightbox-button-show" aria-label="Show large image in modal">
+            {% image tombDiverImages.visualScripting.characterControllerImg.src, tombDiverImages.visualScripting.characterControllerImg.alt, "onepager__img-button" %}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
     const galleries = document.querySelectorAll('.splide');
