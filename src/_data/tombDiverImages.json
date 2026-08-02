@@ -130,30 +130,30 @@
       ]
     }
   },
-  "gallery": [
-    {
-      "src": "src/pages/student-projects/office-rush/images/01_IMG_GP_Office_Rush_95_Title_Screen.png",
-      "alt": ""
-    },
-    {
-      "src": "src/pages/student-projects/office-rush/images/02_IMG_GP_Office_Rush_95_Stamp.png",
-      "alt": ""
-    },
-    {
-      "src": "src/pages/student-projects/office-rush/images/03_IMG_GP_Office_Rush_95_Sort_and_EMail.png",
-      "alt": ""
-    },
-    {
-      "src": "src/pages/student-projects/office-rush/images/04_IMG_GP_Office_Rush_95_Door_Lock.png",
-      "alt": ""
-    },
-    {
-      "src": "src/pages/student-projects/office-rush/images/05_IMG_GP_Office_Rush_95_PvP_01.png",
-      "alt": ""
-    },
-    {
-      "src": "src/pages/student-projects/office-rush/images/06_IMG_GP_Office_Rush_95_PvP_02.png",
-      "alt": ""
-    }
-  ]
+  "gameplayGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/19_Tomb_Diver_Blockout_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/20_Tomb_Diver_Blockout_01.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/21_Tomb_Diver_Blockout_02.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/22_Tomb_Diver_Blockout_03.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/23_Tomb_Diver_Blockout_04.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/24_Tomb_Diver_Blockout_05.png",
+          "alt": ""
+        }
+      ]
 }

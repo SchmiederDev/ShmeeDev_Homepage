@@ -234,6 +234,38 @@ eleventyNavigation:
   </div>
 </div>
 
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+    <div class="two-column__one flow prose">
+      <h3>Playtests</h3>
+      <p>When I was confident I had a playable level I organized playtests to see whether people had the experience I was aiming for:</p>
+      <p>The early playtests showed: The people had fun and spent quite a lot of time exploring the level, climbing up and down, swinging and zip lining their way around the canyon.</p>
+      <p>But it also turned out: Players had “too much fun” traversing the path towards the goal instead of dedicating themselves to solving the final puzzle and reaching the level goal.</p>
+      <p>Therefore I directed my focus during the next iterations on visual and shape language drawing more attention towards the goal, the puzzle elements involved and the order in which to tackle them.</p>
+      <p>After the path was already fun to play when I had people playtest first I managed to communicate the target better and to make the puzzle easier to solve during the final iterations.</p>
+    </div>
+    <div class="two-column__two flow">     
+    </div>
+  </div>
+
+<h2>Gameplay Gallery</h2>
+
+{% if tombDiverImages.gameplayGallery[0].src %}
+  <section id="splide-gameplay-gallery" class="splide breakout flow" aria-labelledby="carousel-heading">
+    <h2 id="carousel-heading" class="visuallyhidden">Gameplay Images</h2>
+
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in tombDiverImages.gameplayGallery %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+{% endif %}
+
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
     const galleries = document.querySelectorAll('.splide');
