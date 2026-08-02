@@ -206,6 +206,34 @@ eleventyNavigation:
     </div>
   </div>
 
+  <div class="breakout flow flow-80 skills">
+  <div class="two-column two-column--swapped">
+    <div class="two-column__one flow prose">
+      <h3>
+        Blockout & Iterations
+      </h3>
+      <p>When blocking out my Challenge Tomb level I started to work my way from the end towards the entrance of the Tomb - the level start: From the pyramid towards the temple complex towards and the path along its natural surroundings.</p>
+      <p>Me keeping my eye constantly on the level goal had the advantage that I could also direct the player’s vision towards the target at any point and allowed me to establish distances, angles and lines of sight very early on.</p>
+      <p>Yet, I soon noticed that my focus on the building structures of the temple complex (= Challenge Tomb) and their relation to one another was not supporting the adventurous verticality I was aiming for very well.</p>
+      <p>In consequence, I radically broke down indoor elements without interesting gameplay and the level became less and less about the temple and circumventing deadly indoor traps and more and more about overcoming the canyon and catching the last ledge saving the character from certain death: Thus more about the game feel characteristic of the Tomb Raider Trilogy.</p>
+    </div>
+    <div class="two-column__two flow">
+      <div id="splide-blockoutGallery-0" class="splide" role="group" aria-label="Image gallery depicting the different stages of the blockout of the level">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.blockout.blockoutGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
     const galleries = document.querySelectorAll('.splide');
