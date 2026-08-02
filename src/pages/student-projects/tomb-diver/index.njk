@@ -1,0 +1,298 @@
+---
+layout: base
+title: "Tomb Diver"
+tags: student
+homepageorder: 1
+permalink: "student-projects/{{ title | slugify }}/"
+heroImage:
+  src: "src/pages/student-projects/tomb-diver/images/Tomb_Diver_00_IMG_HeroBanner.png"
+  alt: ""
+eleventyNavigation:
+  key: studentproject
+  title: {{ page.title }}
+  parent: student
+  order: 1
+---
+
+<div class="hero full-width">
+  {% heroimage heroImage.src, heroImage.alt, "full-width hero__img" %}
+  <div class="hero__content">
+    <h1>{{ title }}</h1>
+  </div>
+</div>
+
+<h2>Gameplay Video</h2>
+<iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/93IJiaCwdYw" title="The character runs throught the first dungeon and gathers three items." frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2>About the Project</h2>
+<p>“Tomb Diver” is a level inspired by the “Challenge Tombs” in the Tomb Raider Survivor Trilogy (Crystal Dynamics/ Eidos-Montréal, 2013-2018) which I created as my final project at School4Games. In accordance with the requirements of the final exam this was an individual piece of work.</p>
+<p>To create an experience similar to the Challenge Tombs in the Survivor Trilogy I first studied and analyzed the characteristics of the level design of the Tombs in all three titles of the series with special regard to the Challenge Tombs in “Shadow of the Tomb Raider” (the last title of the series, 2018).</p>
+<p>The second part of this project was to apply the insights gained from the theoretical analysis to practical level design and make a level which breathes the spirit of the Challenge Tombs.</p>
+
+<div class="lightbox">
+  <dialog class="lightbox-dialog">
+    <button class="lightbox-button-close" autofocus aria-label="Close modal">
+      {% include "icons/plain-cross.njk" %}
+    </button>
+    {% heroimage tombDiverImages.breakdown.src, tombDiverImages.breakdown.alt, "breakdown__img-modal" %}
+  </dialog>
+  <button class="lightbox-button-show" aria-label="Show large image in modal">
+  {% image tombDiverImages.breakdown.src, tombDiverImages.breakdown.alt, "breakdown__img-button" %}
+  </button>
+</div>
+
+<h2>Project Breakdown</h2>
+  <ul>
+    <li><b>The Mission:</b> Make a “Challenge Tomb”-level recreating the player experience in the Tomb Raider Survivor Trilogy based on an analysis of the games</li>
+    <li><b>The Genre:</b> Action Adventure</li>
+    <li><b>Character, Camera, Controls:</b> Single Player, 3rd Person, Keyboard + Mouse or Gamepad</li>
+    <li><b>Platform:</b> PC, Windows</li>
+    <li><b>Tools:</b> Unreal Engine 5.7.1, Unreal Modeling & Landscaping Tools, Blueprints/ Visual Scripting </li>
+    <li><b>Role:</b> Concept, Layout, Blockout, Scripting, Pacing, Lighting, Prop Placement</li>
+    <li><b>Team Size:</b> 1</li>
+  </ul>
+
+
+<h2>Level Design and Creation Process</h2>
+<!-- Image on right side -->
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+    <div class="two-column__one flow prose">
+      <h3>Analyzing the Challenge Tombs</h3>
+      <p>Obviously, I chose to make a “Challenge Tomb” of my own because I loved to play the Challenge Tombs in the Survivor Trilogy. But to to reproduce the experience of the Tombs I first had to answer several questions: </p>
+      <ul>
+        <li>What makes these levels interesting and fun to play?</li>
+        <li>What makes a “Challenge Tomb” a Challenge Tomb in terms of level design?</li>
+        <li>Which incentives are given and which motivations are offered to players to play these side quests?</li>
+        <li>Why are the Challenge Tombs rewarding to play? - Which rewards await players for completing the Tomb?</li>
+        <li>Which kinds of challenges players have to overcome to complete these levels?</li>
+        <li>How are the Challenge Tombs structured in terms of Pacing and Flow?</li>
+        <li>What effect do side-quest-levels have on the general/ overall Pacing and Flow of the games?</li>
+      </ul>
+      <p>And finally the final and central question:</p>
+      <ul>
+        <li>How are Challenge Tombs as side-quest-levels integrated into the semi-open-world areas of the series and what is their function and purpose in otherwise linear Action-Adventures?</li>
+      </ul>
+      <p>The results of my study and detailed answers to these questions you can find here:</p>
+    </div>
+    <div class="two-column__two flow">
+      <div id="splide-analysisGallery-0" class="splide" role="group" aria-label="Image gallery with explanatory screenshots analyzing Challenge Tombs in Tomb Raider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.tombAnalysis.analysisGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="breakout flow flow-80 skills">
+  <div class="two-column two-column--swapped">
+    <div class="two-column__one flow prose">
+      <h3>
+        Meta Human Character
+      </h3>
+      <p>I wanted to create an authentic experience therefore I needed a convincing female action hero. Yet I did not want just to copy Lara Croft therefore I created my own interpretation of an adventurous archaeologist.</p>
+      <p>Since I am not a 3D-Character-Artist I made use of Unreal Meta Humans to create the character for the level.</p>
+      <p>I learned to use Unreal modeling tools to adjust the adventurer outfit I had found on Sketchfab so it would fit my character.</p>
+    </div>
+    <div class="two-column__two flow">
+      <div id="splide-characterGallery-0" class="splide" role="group" aria-label="Image gallery depicting the creation of the main character">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.metaHuman.characterGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+    <div class="two-column__one flow prose">
+      <h3>Unreal Visual Scripting & Character Controller</h3>
+      <p>Unreal comes with amazing free templates but none of them had the specific moveset of Lara in the Tomb Raider Trilogy so I started to expand the 3rd-Person Unreal character blueprint and  in a way that it would serve my purpose.</p>
+      <p>Therefore I coded wall and ledge climbing functions with Visual Scripting, implemented mantling, crouching and sliding moves.</p>
+      <p>I made my own functional checkpoint, level trigger and interactable object scripts (levers, switches, sliding doors, movable objects, trap doors and spear traps etc.). </p>
+      <p>Proud as I was how fast I had accomplished to produce e. g. a working ledge climbing system I realized during the first weeks of the project that balancing and fine tuning my own Adventure Game System would either take its toll on the quality of the level design or remain in an unpolished state.
+        Therefore I made the hard decision to abandon the character controller I had put a lot of effort in and use a readymade Adventure Game System created by a professional programmer (<a href="https://www.patreon.com/JakubW/posts/ue-5-7-v1-8-0-no-153909783">Jakub W</a>) to have more time to invest in improving and iterating upon the level design.</p>
+      <p>Nonetheless, the process of making my own Adventure Game System was not in vain. I learned a lot about Visual Scripting and Unreal Blueprints, the Animation System, Collision Layers and much more. I now have a much better and deeper understanding of many components of the Unreal Engine and how they work together.</p>
+    </div>
+    <div class="two-column__two flow">
+     <div class="lightbox">
+      <dialog class="lightbox-dialog">
+        <button class="lightbox-button-close" autofocus aria-label="Close modal">
+          {% include "icons/plain-cross.njk" %}
+        </button>
+          {% heroimage tombDiverImages.creationProcess.visualScripting.characterControllerImg.src, tombDiverImages.creationProcess.visualScripting.characterControllerImg.alt, "onepager__img-modal" %}
+        </dialog>
+          <button class="lightbox-button-show" aria-label="Show large image in modal">
+            {% image tombDiverImages.creationProcess.visualScripting.characterControllerImg.src, tombDiverImages.creationProcess.visualScripting.characterControllerImg.alt, "onepager__img-button" %}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="breakout flow flow-80 skills">
+  <div class="two-column two-column--swapped">
+    <div class="two-column__one flow prose">
+      <h3>
+        Gym Level and Metrics
+      </h3>
+      <p>Before I started to create the actual Challenge Tomb level, “The Great Pyramid”, I first established the metrics of the level, to figure out distances, height levels and size relations.</p>
+      <p>The relation between the character and the largest architectural structure, the pyramid, served as a reference point to establish everything else.</p>
+      <p>I also made a Gym Level to test and fine tune the moveset in relation to level metrics.</p>
+      <p>Here I established the values for gameplay mechanics such as jump height and distance, distance between ledges, the speed with which traps trigger so they are challenging but still possible for the player to avoid etc.</p>
+    </div>
+    <div class="two-column__two flow">
+      <div id="splide-gymLevelGallery-0" class="splide" role="group" aria-label="Image gallery depicting a gym level and size relation between character and a pyramid">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.gymLevelMetrics.gymGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+    <div class="two-column__one flow prose">
+      <h3>Level Layout and Iterations</h3>
+      <p>My analysis of the Challenge Tombs showed that these levels usually consisted of four level sections I also wanted to have in my “Tomb”:</p>
+      <ul>
+        <li>The hidden entrance area located in the semi-open world regions of the Survivor Trilogy. Though “hidden”, these areas were marked with clear denominators like color coded decals and props such as golden masks on poles.</li>
+        <li>Behind the entrance followed an alley-type-like level section, a narrow path either enclosed by walls/ rocks or deadly chasms to the left and right of the path.</li>
+        <li>The actual Challenge Tomb, which I dubbed “Challenge Tomb Proper”, a rectangular or circular “playground” area in which the elements of the central puzzle and the reward/ level goal are located.</li>
+        <li>Finally, the way back, also an alley-/path-like section leading back towards the entrance - usually a short cut running parallel or above the way in which often is only accessible from the end of the level.</li>
+      </ul>
+      <p>Quite early on I had a vision of how the entrance area and the path to Challenge Tomb could look like: Coming from a narrow valley basin the player would enter a canyon through a rock crevice. Players would have to find their way along narrow ridges high above chasms created by a wide river eroding the rock of the canyon.</p>
+      <p>From the canyon players would enter a closed off temple complex containing the Challenge Tomb proper: the central puzzle with the level goal/ reward at the end.</p>
+      <p>Yet, there was a certain tension between the very vertical and winding rough natural surroundings and gameplay within/ around human architecture  - which in the real world is usually built on flat planes.</p>
+      <p>The question of how I could reconcile these two elements was a challenge I had to tackle.</p>
+      <p>Depending on what type of game or level you’re making, realism is of course not premise number 1 in a video game but for an Action Adventure inspired by Tomb Raider the interplay between natural environment and architecture had at least to be convincing.</p>
+      <p>Since not all questions can be answered only in theory I began to block out (gray box) and started a dialogue between the conceptual layouts on paper and the playable level in Engine.</p>
+    </div>
+    <div class="two-column__two flow">
+     <div id="splide-layoutGallery-0" class="splide" role="group" aria-label="Image gallery depicting different stages of the level layout design process with handdrawn layout sketches">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.layout.layoutGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="breakout flow flow-80 skills">
+  <div class="two-column two-column--swapped">
+    <div class="two-column__one flow prose">
+      <h3>
+        Blockout & Iterations
+      </h3>
+      <p>When blocking out my Challenge Tomb level I started to work my way from the end towards the entrance of the Tomb - the level start: From the pyramid towards the temple complex towards and the path along its natural surroundings.</p>
+      <p>Me keeping my eye constantly on the level goal had the advantage that I could also direct the player’s vision towards the target at any point and allowed me to establish distances, angles and lines of sight very early on.</p>
+      <p>Yet, I soon noticed that my focus on the building structures of the temple complex (= Challenge Tomb) and their relation to one another was not supporting the adventurous verticality I was aiming for very well.</p>
+      <p>In consequence, I radically broke down indoor elements without interesting gameplay and the level became less and less about the temple and circumventing deadly indoor traps and more and more about overcoming the canyon and catching the last ledge saving the character from certain death: Thus more about the game feel characteristic of the Tomb Raider Trilogy.</p>
+    </div>
+    <div class="two-column__two flow">
+      <div id="splide-blockoutGallery-0" class="splide" role="group" aria-label="Image gallery depicting the different stages of the blockout of the level">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for img in tombDiverImages.creationProcess.blockout.blockoutGallery %}
+              <li class="splide__slide">
+                {% image img.src, img.alt %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+    <div class="two-column__one flow prose">
+      <h3>Playtests</h3>
+      <p>When I was confident I had a playable level I organized playtests to see whether people had the experience I was aiming for:</p>
+      <p>The early playtests showed: The people had fun and spent quite a lot of time exploring the level, climbing up and down, swinging and zip lining their way around the canyon.</p>
+      <p>But it also turned out: Players had “too much fun” traversing the path towards the goal instead of dedicating themselves to solving the final puzzle and reaching the level goal.</p>
+      <p>Therefore I directed my focus during the next iterations on visual and shape language drawing more attention towards the goal, the puzzle elements involved and the order in which to tackle them.</p>
+      <p>After the path was already fun to play when I had people playtest first I managed to communicate the target better and to make the puzzle easier to solve during the final iterations.</p>
+    </div>
+    <div class="two-column__two flow">     
+    </div>
+  </div>
+
+<h2>Gameplay Gallery</h2>
+
+{% if tombDiverImages.gameplayGallery[0].src %}
+  <section id="splide-gameplay-gallery" class="splide breakout flow" aria-labelledby="carousel-heading">
+    <h2 id="carousel-heading" class="visuallyhidden">Gameplay Images</h2>
+
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in tombDiverImages.gameplayGallery %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+{% endif %}
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    const galleries = document.querySelectorAll('.splide');
+    galleries.forEach(slide => {
+      let splide = new Splide(`#${slide.id}`, {
+        type  : 'fade',
+        rewind: true,
+        padding: '3rem',
+        gap:'2rem',
+        lazyLoad: 'nearby',
+      });
+      splide.mount();
+    });
+  // init lightbox
+  const lightbox = document.querySelectorAll('.lightbox');
+  lightbox.forEach(box => {
+    const dialog = box.querySelector(".lightbox-dialog");
+    const showButton = box.querySelector(".lightbox-button-show");
+    const closeButton = box.querySelector(".lightbox-button-close");
+    showButton.addEventListener("click", () => {
+      dialog.showModal();
+    });
+    closeButton.addEventListener("click", () => {
+      dialog.close();
+    });
+  });
+  } );
+</script>
+
+<script defer src="/assets/vendor/splide-4.1.3/dist/js/splide.min.js"></script>

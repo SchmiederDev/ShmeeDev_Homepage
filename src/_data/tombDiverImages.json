@@ -1,0 +1,167 @@
+{
+  "title": "Tomb Diver",
+  "onepager": {
+    "src": "src/pages/student-projects/tomb-diver/images/Tomb_Diver_00_IMG_HeroBanner.png",
+    "alt": ""
+  },
+  "breakdown":
+  {
+    "src": "src/pages/student-projects/tomb-diver/images/Tomb_Diver_Project_Breakdown_00_Overview.png",
+    "alt": "",
+    "lightbox": "src/pages/student-projects/tomb-diver/images/Tomb_Diver_Project_Breakdown_00_Overview.png"
+  },
+  "creationProcess": {
+    "tombAnalysis": {
+      "analysisGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/00_TombDiver_Analysis_Underworld_Gate_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/01_Tomb_Diver_Analysis_Judges_Gaze_FullLayout_Reconstructed_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/02_TombDiver_Analysis_Underworld_Gate_01.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/03_TombDiver_Analysis_Underworld_Gate_02.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/04_TombDiver_Analysis_Underworld_Gate_03.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/05_TombDiver_Analysis_Ancient_Aqueduct_00.png",
+          "alt": ""
+        }
+      ]
+    },
+    "metaHuman": {
+      "characterGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/07_MetaHuman_CaraLoft_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/08_Meta_Human_Cara_Loft_Outfit_01.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/09_Meta_Human_Cara_Loft_Outfit_02.png",
+          "alt": ""
+        }
+      ]
+    },
+    "visualScripting": {
+      "characterControllerImg": {
+        "src": "src/pages/student-projects/tomb-diver/images/10_Tomb_Diver_Visual_Scripting.png",
+        "alt": ""
+      }
+    },
+    "gymLevelMetrics": {
+      "gymGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/11_Tomb_Diver_Gym_Level.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/12_Tomb_Diver_Metrics.png",
+          "alt": ""
+        }
+      ]
+    },
+    "layout": {
+      "layoutGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/13_Tomb_Diver_Layout_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/14_Tomb_Diver_Layout_01.jpg",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/15_Tomb_Diver_Training_Area_Layout_02.jpg",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/16_Tomb_Diver_Layout_03.jpg",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/17_Tomb_Diver_Layout_04.jpg",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/18_Tomb_Diver_Layout_06.jpg",
+          "alt": ""
+        }
+      ]
+    },
+    "blockout": {
+      "blockoutGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/19_Tomb_Diver_Blockout_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/20_Tomb_Diver_Blockout_01.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/21_Tomb_Diver_Blockout_02.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/22_Tomb_Diver_Blockout_03.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/23_Tomb_Diver_Blockout_04.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/24_Tomb_Diver_Blockout_05.png",
+          "alt": ""
+        }
+      ]
+    }
+  },
+  "gameplayGallery": [
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/25_Tomb_Diver_Gameplay_00.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/26_Tomb_Diver_Gameplay_01.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/27_Tomb_Diver_Gameplay_02.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/28_Tomb_Diver_Gameplay_03.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/29_Tomb_Diver_Gameplay_04.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/30_Tomb_Diver_Gameplay_05.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/31_Tomb_Diver_Gameplay_06.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/tomb-diver/images/32_Tomb_Diver_Gameplay_07.png",
+          "alt": ""
+        }
+      ]
+}

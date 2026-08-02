@@ -1,5 +1,13 @@
 [
   {
+    "title": "Tomb Diver",
+    "url": "student-projects/tomb-diver",
+    "heroImage": {
+      "src": "src/pages/student-projects/tomb-diver/images/Tomb_Diver_00_IMG_HeroBanner.png",
+      "alt": ""
+    }
+  },
+  {
     "title": "Office Rush '95",
     "url": "student-projects/office-rush-95/",
     "heroImage": {
